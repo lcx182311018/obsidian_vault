@@ -16,7 +16,7 @@
                 "file": "SignNav_Directional_Signage-Cue_Guided_Visual_Navigation_in_Large-Scale_Indoor_Environments.pdf",
                 "page": 1,
                 "left": -21,
-                "top": 103,
+                "top": 116,
                 "zoom": 0.7462121212121212
               },
               "icon": "lucide-file-text",
@@ -229,6 +229,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -243,10 +244,22 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "af048d879bdcab4f",
+  "active": "adb3e34651dbbb62",
   "lastOpenFiles": [
-    "SignNav_Directional_Signage-Cue_Guided_Visual_Navigation_in_Large-Scale_Indoor_Environments.pdf",
     "SignNav.md",
+    "[(54.md",
+    "SignNav_Directional_Signage-Cue_Guided_Visual_Navigation_in_Large-Scale_Indoor_Environments.pdf",
+    "Pasted image 20261008183911.png",
+    "Pasted image 20261008183745.png",
+    "Pasted image 20261008183735.png",
+    "Pasted image 20261008183025.png",
+    "Pasted image 20261008180019.png",
+    "Pasted image 20261008175921.png",
+    "Pasted image 20261008175712.png",
+    "Pasted image 20261008175704.png",
+    "NIPS-2017-attention-is-all-you-need-Paper.pdf",
+    "Pasted image 20261008175101.png",
+    "Pasted image 20261008175103.png",
     "Snowy_Scenes.md",
     "Snowy_Scenes_A_Multimodal_Multitask_Dataset_Toward_Snow-Tonomous_Vehicles.pdf",
     "Snowy_Scenes.pdf.md",

@@ -1,0 +1,12 @@
+{
+  "autoSaveInterval": 30,
+  "autoPushInterval": 60,
+  "autoPullInterval": 30,
+  "autoPullOnBoot": true,
+  "autoBackupAfterFileChange": true,
+  "differentIntervalCommitAndPush": true,
+  "pullBeforePush": true,
+  "disablePush": false,
+  "autoCommitMessage": "vault backup: {{date}}",
+  "showStatusBar": true
+}

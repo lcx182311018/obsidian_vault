@@ -398,8 +398,8 @@
       "reasoningSummary": "detailed",
       "environmentVariables": "",
       "environmentHash": "runtime-input:v1:ed54f4f5238abeec7f65a5da1e468c9a639e157a7d1c7753b53f54ba1196e8a0",
-      "catalogTimestamp": 1791431881866,
-      "catalogFingerprint": "2:8b174779443d033ffbecdc086e9883e05093fc062027abdfc5ae90df1ea309ec",
+      "catalogTimestamp": 1791452930448,
+      "catalogFingerprint": "2:5fb63404431da35e092570d3a096e502af938a1f08940f31f1e98ed4af817ac1",
       "installationMethodsByHost": {},
       "wslDistroOverridesByHost": {}
     },
@@ -442,7 +442,7 @@
   "settingsProvider": "codex",
   "lastSelectedChatModel": {
     "providerId": "codex",
-    "model": "gpt-6-luna"
+    "model": "gpt-5.6-luna"
   },
   "savedProviderModel": {
     "claude": "haiku",
