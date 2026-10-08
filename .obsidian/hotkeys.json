@@ -1,0 +1,18 @@
+{
+  "mini-translator:translate-selection-paragraph": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "4"
+    }
+  ],
+  "mini-translator:translate-selection": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "3"
+    }
+  ]
+}

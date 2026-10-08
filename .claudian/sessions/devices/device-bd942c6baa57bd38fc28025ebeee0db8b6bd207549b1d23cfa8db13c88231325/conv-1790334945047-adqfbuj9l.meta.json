@@ -1,0 +1,27 @@
+{
+  "id": "conv-1790334945047-adqfbuj9l",
+  "providerId": "codex",
+  "title": "解读文章中的图片",
+  "titleGenerationStatus": "success",
+  "createdAt": 1790334945078,
+  "lastActivityAt": 1791431963257,
+  "sessionId": "01a0d847-482e-7fc3-ab8a-b1b79e021b8c",
+  "selectedModel": "gpt-6-luna",
+  "providerState": {
+    "threadId": "01a0d847-482e-7fc3-ab8a-b1b79e021b8c",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "C:\\Users\\86135\\.codex\\sessions\\2026\\09\\25\\rollout-2026-09-25T19-15-45-01a0d847-482e-7fc3-ab8a-b1b79e021b8c.jsonl",
+    "transcriptRootPath": "C:\\Users\\86135\\.codex\\sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "usage": {
+    "inputTokens": 29022,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 26702,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 29022,
+    "percentage": 11,
+    "model": "gpt-6-luna"
+  }
+}

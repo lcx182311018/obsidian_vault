@@ -1,0 +1,1741 @@
+/* Mini Translator 面板样式 */
+
+/* 全文翻译笔记：限制舒适行长并给段落、分页标题和公式留出呼吸空间。
+   cssclasses frontmatter 只会把这些规则应用到插件生成的全文译文。 */
+.markdown-preview-view.mini-translator-full-translation .markdown-preview-sizer,
+.mini-translator-full-translation.markdown-preview-view .markdown-preview-sizer {
+  width: min(100%, 1040px);
+  max-width: 1040px;
+  margin-inline: auto;
+  padding-inline: clamp(18px, 4vw, 58px);
+  padding-bottom: 12vh;
+}
+
+.markdown-source-view.mod-cm6.mini-translator-full-translation .cm-contentContainer,
+.mini-translator-full-translation.markdown-source-view.mod-cm6 .cm-contentContainer {
+  width: min(100%, 1040px);
+  max-width: 1040px;
+  margin-inline: auto;
+}
+
+.markdown-source-view.mod-cm6.mini-translator-full-translation .cm-line,
+.mini-translator-full-translation.markdown-source-view.mod-cm6 .cm-line {
+  line-height: 1.78;
+}
+
+.markdown-source-view.mod-cm6.mini-translator-full-translation .cm-embed-block.math,
+.mini-translator-full-translation.markdown-source-view.mod-cm6 .cm-embed-block.math {
+  max-width: 100%;
+  overflow-x: auto;
+  padding-block: 0.7rem;
+}
+
+.markdown-preview-view.mini-translator-full-translation p,
+.mini-translator-full-translation.markdown-preview-view p,
+/* Obsidian 1.8+ 有些主题把 cssclasses 挂在 markdown-preview-section，
+   这里补上该挂载点，避免主题/版本变化导致段首缩进失效。 */
+.markdown-preview-section.mini-translator-full-translation p,
+.mini-translator-full-translation .markdown-preview-section p {
+  margin-block: 0.9em 1.15em;
+  font-family: "Noto Serif CJK SC", "Source Han Serif SC", "Songti SC", SimSun, serif;
+  font-size: clamp(16px, 0.55vw + 12px, 18px);
+  line-height: 1.92;
+  letter-spacing: 0.012em;
+  text-align: start;
+  --mini-translator-first-line-indent: 2em;
+}
+
+/* Obsidian's desktop and mobile WebViews do not support native first-line indentation equally.
+   An empty inline spacer preserves first-line indentation without affecting
+   copied text or indenting wrapped lines. */
+.markdown-preview-view.mini-translator-full-translation p::before,
+.mini-translator-full-translation.markdown-preview-view p::before,
+.markdown-preview-section.mini-translator-full-translation p::before,
+.mini-translator-full-translation .markdown-preview-section p::before {
+  content: "";
+  display: inline-block;
+  inline-size: var(--mini-translator-first-line-indent, 2em);
+}
+
+/* 非中文全文按目标文字系统排版；生成文件会在 cssclasses 中写入 script class。 */
+.mini-translator-full-translation.mini-translator-script-latin p,
+.mini-translator-full-translation.mini-translator-script-cyrillic p,
+.mini-translator-full-translation.mini-translator-script-greek p,
+.mini-translator-full-translation.mini-translator-script-other p {
+  font-family: Georgia, "Times New Roman", "Noto Serif", serif;
+  letter-spacing: 0.006em;
+  --mini-translator-first-line-indent: 1.35em;
+}
+
+.mini-translator-full-translation.mini-translator-script-hangul p {
+  font-family: "Noto Serif KR", "Nanum Myeongjo", serif;
+  --mini-translator-first-line-indent: 1em;
+}
+
+.mini-translator-full-translation.mini-translator-script-indic p,
+.mini-translator-full-translation.mini-translator-script-seasia p {
+  font-family: "Noto Serif", "Nirmala UI", "Leelawadee UI", serif;
+  line-height: 2;
+  --mini-translator-first-line-indent: 1em;
+}
+
+.mini-translator-full-translation.mini-translator-script-rtl p {
+  direction: rtl;
+  text-align: right;
+  font-family: "Noto Naskh Arabic", "Noto Sans Arabic", "Segoe UI", serif;
+  line-height: 2;
+  --mini-translator-first-line-indent: 1.4em;
+}
+
+.markdown-preview-view.mini-translator-full-translation h1,
+.mini-translator-full-translation.markdown-preview-view h1 {
+  margin-block: 1.1em 1.35em;
+  line-height: 1.35;
+}
+
+.markdown-preview-view.mini-translator-full-translation h2,
+.mini-translator-full-translation.markdown-preview-view h2 {
+  margin-block: 3.4rem 1.35rem;
+  padding: 0.55rem 0 0.55rem 0.8rem;
+  border-bottom: 1px solid var(--background-modifier-border);
+  border-left: 3px solid color-mix(in srgb, var(--interactive-accent) 48%, transparent);
+  color: var(--text-normal);
+  font-size: clamp(1.18rem, 0.7vw + 0.95rem, 1.48rem);
+}
+
+.markdown-preview-view.mini-translator-full-translation h1 + blockquote,
+.mini-translator-full-translation.markdown-preview-view h1 + blockquote {
+  margin-bottom: 2.6rem;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--background-secondary) 72%, transparent);
+  color: var(--text-muted);
+}
+
+.markdown-preview-view.mini-translator-full-translation .math-block,
+.mini-translator-full-translation.markdown-preview-view .math-block,
+.markdown-preview-view.mini-translator-full-translation .MathJax[display="true"],
+.mini-translator-full-translation.markdown-preview-view .MathJax[display="true"] {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-block: 1.25rem;
+  padding: 0.85rem 1rem;
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--background-secondary) 76%, transparent);
+}
+
+.markdown-preview-view.mini-translator-full-translation .callout[data-callout="figure"],
+.mini-translator-full-translation.markdown-preview-view .callout[data-callout="figure"] {
+  --callout-color: 112, 126, 145;
+  margin-block: 1.6rem 2rem;
+  padding: 0.8rem;
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--background-secondary) 78%, transparent);
+}
+
+.markdown-preview-view.mini-translator-full-translation .callout[data-callout="figure"] .callout-content,
+.mini-translator-full-translation.markdown-preview-view .callout[data-callout="figure"] .callout-content {
+  text-align: center;
+}
+
+.markdown-preview-view.mini-translator-full-translation .callout[data-callout="figure"] img,
+.mini-translator-full-translation.markdown-preview-view .callout[data-callout="figure"] img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: 76vh;
+  margin: 0.7rem auto 0;
+  object-fit: contain;
+  border-radius: 5px;
+  box-shadow: 0 2px 12px rgb(0 0 0 / 0.12);
+}
+
+@media (max-width: 720px) {
+  .markdown-preview-view.mini-translator-full-translation .markdown-preview-sizer,
+  .mini-translator-full-translation.markdown-preview-view .markdown-preview-sizer {
+    padding-inline: 14px;
+  }
+
+  .markdown-preview-view.mini-translator-full-translation p,
+  .mini-translator-full-translation.markdown-preview-view p {
+    font-size: 16px;
+    line-height: 1.84;
+  }
+}
+
+.mini-translator-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 14px 10px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.mini-language-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  gap: 7px;
+  padding: 7px;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 9px;
+  background: color-mix(in srgb, var(--background-secondary) 72%, transparent);
+}
+
+.mini-language-row .dropdown {
+  width: 100%;
+  min-width: 0;
+  font-size: var(--font-ui-small);
+}
+
+.mini-language-arrow {
+  color: var(--text-muted);
+  font-size: 0.95em;
+}
+
+.mini-language-notice {
+  display: none;
+  margin-top: -9px;
+  padding: 0 5px;
+  color: var(--text-faint);
+  font-size: var(--font-smallest);
+  line-height: 1.45;
+}
+
+.mini-language-notice.is-visible {
+  display: block;
+}
+
+.mini-language-settings-notice {
+  margin: 8px 0 14px;
+  padding: 9px 11px;
+  border-left: 3px solid var(--color-orange);
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--color-orange) 9%, var(--background-secondary));
+  color: var(--text-muted);
+  font-size: var(--font-ui-small);
+  line-height: 1.55;
+}
+
+.mini-panel-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 12px;
+  row-gap: 8px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.mini-panel-source-control {
+  display: flex;
+  flex: 0 1 auto;
+  align-items: center;
+  gap: 5px;
+  min-width: 0;
+}
+
+.mini-panel-header .mini-label {
+  flex: none;
+  font-size: var(--font-smaller);
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.mini-panel-source-control .dropdown {
+  flex: 0 1 auto;
+  width: fit-content;
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mini-panel-model-control .dropdown {
+  max-width: 240px;
+}
+
+.mini-panel-model-control {
+  order: 2;
+  flex: 0 0 100%;
+}
+
+button.mini-source-picker-trigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: fit-content;
+  min-width: 0;
+  max-width: 200px;
+  height: var(--input-height);
+  padding: 0 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+  color: var(--text-normal);
+  background: var(--background-modifier-form-field);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-s);
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.mini-panel-header .mini-panel-source-control button.mini-source-picker-trigger {
+  flex: 0 1 auto;
+  min-width: 0;
+  max-width: 160px;
+}
+
+.setting-item-control button.mini-source-picker-trigger,
+.mini-panel-header button.mini-source-picker-trigger,
+.setting-item-control button.mini-source-picker-trigger:hover,
+.mini-panel-header button.mini-source-picker-trigger:hover,
+.setting-item-control button.mini-source-picker-trigger:focus-visible,
+.mini-panel-header button.mini-source-picker-trigger:focus-visible,
+.setting-item-control button.mini-source-picker-trigger:active,
+.mini-panel-header button.mini-source-picker-trigger:active {
+  justify-content: flex-start;
+  text-align: left;
+  box-shadow: none;
+}
+
+button.mini-source-picker-trigger:hover,
+button.mini-source-picker-trigger[aria-expanded="true"] {
+  color: var(--interactive-accent);
+  border-color: var(--interactive-accent);
+}
+
+button.mini-source-picker-trigger:focus-visible {
+  text-decoration: underline;
+  outline: 0;
+}
+
+.mini-source-picker-panel {
+  position: fixed;
+  z-index: 9999;
+  width: max-content;
+  min-width: 180px;
+  max-width: min(260px, calc(100vw - 24px));
+  max-height: min(420px, calc(100vh - 24px));
+  overflow-y: auto;
+  padding: 6px;
+  text-align: left;
+  color: var(--text-normal);
+  background: var(--background-primary);
+  border: 0;
+  border-radius: var(--radius-m);
+  box-shadow: var(--shadow-s);
+}
+
+.mini-source-picker-heading {
+  padding: 6px 8px 9px;
+  color: var(--text-muted);
+  font-size: var(--font-smaller);
+}
+
+.mini-source-picker-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 34px;
+  padding: 3px 6px;
+  border-radius: var(--radius-s);
+  cursor: grab;
+  user-select: none;
+}
+
+.mini-source-picker-row:hover,
+.mini-source-picker-row.is-drop-target {
+  background: var(--background-modifier-hover);
+}
+
+.mini-source-picker-row.is-dragging {
+  opacity: 0.45;
+}
+
+.mini-source-picker-grip {
+  flex: none;
+  color: var(--text-faint);
+  font-size: 15px;
+  letter-spacing: -3px;
+}
+
+.mini-source-picker-panel .mini-source-picker-row button.mini-source-picker-choice {
+  display: block;
+  flex: 1;
+  min-width: 0;
+  padding: 3px 0;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+  justify-content: flex-start;
+  color: var(--text-normal);
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.mini-source-picker-panel .mini-source-picker-row button.mini-source-picker-choice:hover,
+.mini-source-picker-panel .mini-source-picker-row button.mini-source-picker-choice:focus-visible,
+.mini-source-picker-panel .mini-source-picker-row button.mini-source-picker-choice:active {
+  text-align: left;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+
+.mini-source-picker-panel .mini-source-picker-row button.mini-source-picker-choice.is-primary {
+  color: var(--interactive-accent);
+  font-weight: var(--font-semibold);
+}
+
+.mini-source-picker-enabled {
+  flex: none;
+  margin: 0 2px;
+  cursor: pointer;
+}
+
+.mini-source-picker-model-badge {
+  flex: none;
+  color: var(--text-faint);
+  font-size: var(--font-smaller);
+}
+
+.mini-copy-btn {
+  order: 1;
+  flex: none;
+  align-self: center;
+  margin-left: auto;
+  font-size: var(--font-smaller);
+  color: var(--text-muted);
+  background: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 6px;
+  padding: 2px 8px;
+  cursor: pointer;
+  transition: color 0.15s, background 0.15s;
+}
+
+.mini-copy-btn:hover {
+  color: var(--text-normal);
+  background: var(--background-modifier-hover);
+}
+
+.mini-panel-actions {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 2px;
+  margin-top: -5px;
+  padding: 4px 5px 4px 8px;
+  border-radius: 9px;
+  background: var(--background-secondary);
+  box-shadow: inset 0 0 0 1px color-mix(
+    in srgb,
+    var(--background-modifier-border) 55%,
+    transparent
+  );
+}
+
+.mini-panel-actions-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  color: var(--text-muted);
+  font-size: var(--font-smaller);
+  line-height: 1.25;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.mini-panel-actions-title > span:last-child {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mini-panel-actions-icon {
+  display: inline-flex;
+  flex: 0 0 auto;
+  opacity: 0.72;
+}
+
+.mini-panel-actions-icon svg {
+  width: 14px;
+  height: 14px;
+}
+
+.mini-full-translate-btn {
+  width: auto;
+  min-height: 26px;
+  padding: 2px 7px;
+  border: 0;
+  border-radius: 6px;
+  box-shadow: none;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: var(--font-smaller);
+  cursor: pointer;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+
+.mini-full-translate-btn:hover,
+.mini-full-translate-btn:focus-visible {
+  color: var(--text-normal);
+  background: var(--background-modifier-hover);
+}
+
+/* 双语逐句对照：原文行弱化，译文行正常，句间留白 */
+.mini-flow {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 英文原文：衬线字体、两端对齐（英文排版规范，段首不缩进）；可光标选中复制 */
+.mini-en-line {
+  font-family: Georgia, "Times New Roman", "Songti SC", serif;
+  font-size: var(--font-smaller);
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 6px;
+  text-align: justify;
+  white-space: pre-wrap;
+  user-select: text;
+}
+
+.mini-source-line[data-script="cjk"] {
+  font-family: "Noto Serif CJK SC", "Source Han Serif SC", "Songti SC", SimSun, serif;
+  text-align: start;
+}
+
+.mini-source-line[data-script="rtl"],
+.mini-target-line[data-script="rtl"] {
+  direction: rtl;
+  text-align: right;
+  font-family: "Noto Naskh Arabic", "Noto Sans Arabic", "Segoe UI", serif;
+  line-height: 1.95;
+}
+
+.mini-target-line[data-script="rtl"] {
+  --mini-translator-first-line-indent: 1.4em;
+}
+
+/* 中文文本规范：段首缩进两字符；词典释义是条目式，不缩进；可光标选中复制 */
+.mini-zh-line {
+  font-size: var(--font-text-size);
+  color: var(--text-normal);
+  line-height: 1.75;
+  margin-bottom: 12px;
+  --mini-translator-first-line-indent: 2em;
+  white-space: pre-wrap;
+  user-select: text;
+}
+
+.mini-zh-line::before {
+  content: "";
+  display: inline-block;
+  inline-size: var(--mini-translator-first-line-indent, 2em);
+}
+
+.mini-target-line[data-script="latin"],
+.mini-target-line[data-script="cyrillic"],
+.mini-target-line[data-script="greek"],
+.mini-target-line[data-script="other"] {
+  font-family: Georgia, "Times New Roman", "Noto Serif", serif;
+  --mini-translator-first-line-indent: 1.35em;
+  letter-spacing: 0.006em;
+}
+
+.mini-target-line[data-script="hangul"] {
+  font-family: "Noto Serif KR", "Nanum Myeongjo", serif;
+  --mini-translator-first-line-indent: 1em;
+}
+
+.mini-target-line[data-script="indic"],
+.mini-target-line[data-script="seasia"] {
+  font-family: "Noto Serif", "Nirmala UI", "Leelawadee UI", serif;
+  line-height: 1.95;
+  --mini-translator-first-line-indent: 1em;
+}
+
+.mini-zh-pending {
+  color: var(--text-faint);
+  font-style: italic;
+}
+
+/* 翻译尚未返回时的三个动态圆点；只提示等待，不模拟译文输出。 */
+.mini-translator-waiting-dots {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  height: 1em;
+  vertical-align: -0.08em;
+}
+
+.mini-translator-waiting-dots i {
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.32;
+  transform: translateY(0) scale(0.82);
+  animation: mini-translator-wait-dot 1.05s ease-in-out infinite;
+}
+
+.mini-translator-waiting-dots i:nth-child(2) {
+  animation-delay: 0.14s;
+}
+
+.mini-translator-waiting-dots i:nth-child(3) {
+  animation-delay: 0.28s;
+}
+
+@keyframes mini-translator-wait-dot {
+  0%, 65%, 100% {
+    opacity: 0.32;
+    transform: translateY(0) scale(0.82);
+  }
+  32% {
+    opacity: 0.95;
+    transform: translateY(-2px) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mini-translator-waiting-dots i {
+    animation: none;
+    opacity: 0.65;
+    transform: none;
+  }
+}
+
+.mini-dict-line {
+  font-size: var(--font-text-size);
+  color: var(--text-normal);
+  line-height: 1.75;
+  margin-bottom: 12px;
+  white-space: pre-wrap;
+  user-select: text;
+}
+
+/* 选区旁弹窗初始按字数自适应；用户可拖动右下角缩放，到设置的上限后滚动。 */
+.mini-translator-popup {
+  display: flex;
+  flex-direction: column;
+  min-height: 88px;
+  overflow: hidden;
+  resize: both;
+}
+
+.mini-translator-popup .mini-popup-header {
+  flex: 0 0 auto;
+}
+
+.mini-translator-popup .mini-popup-body {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
+}
+
+/* Chromium 的原生 resize 标记在部分主题里几乎不可见，补一枚低对比度提示。 */
+.mini-translator-popup::after {
+  content: "";
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+  width: 10px;
+  height: 10px;
+  pointer-events: none;
+  opacity: 0.3;
+  background: linear-gradient(
+    135deg,
+    transparent 0 45%,
+    var(--text-faint) 46% 53%,
+    transparent 54% 68%,
+    var(--text-faint) 69% 76%,
+    transparent 77%
+  );
+  transition: opacity 0.15s;
+}
+
+.mini-translator-popup:hover::after {
+  opacity: 0.52;
+}
+
+.mini-translator-popup .mini-en-line {
+  font-size: calc(var(--font-smaller) + var(--mini-popup-small-text-boost, 0px));
+  line-height: 1.5;
+  margin-bottom: 4px;
+}
+
+.mini-translator-popup .mini-zh-line,
+.mini-translator-popup .mini-dict-line {
+  font-size: calc(var(--font-text-size) + var(--mini-popup-text-boost, 0px));
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+/* 弹窗宽度由内容自适应，但始终限制在可读范围内；极长的连续字符串也要能换行。 */
+.mini-translator-popup .mini-en-line,
+.mini-translator-popup .mini-zh-line,
+.mini-translator-popup .mini-dict-line {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+.mini-translator-popup .mini-popup-close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  min-height: 20px;
+  border-radius: 5px;
+  color: var(--text-muted);
+  transition: color 0.15s, background 0.15s;
+}
+
+.mini-translator-popup .mini-popup-close:hover,
+.mini-translator-popup .mini-popup-close:focus-visible {
+  color: var(--text-normal);
+  background: var(--background-modifier-hover);
+}
+
+.mini-zh-line:last-child {
+  margin-bottom: 0;
+}
+
+.mini-meta {
+  font-size: var(--font-smaller);
+  color: var(--text-faint);
+  text-align: right;
+  padding-right: 2px;
+}
+
+.mini-empty {
+  color: var(--text-faint);
+  font-size: var(--font-smaller);
+  text-align: center;
+  margin-top: 32px;
+  line-height: 1.9;
+  padding: 0 8px;
+  white-space: pre-wrap;
+}
+
+/* ---------- 翻译历史：默认收起，时钟图标展开；文件/页码藏详情 ---------- */
+.mini-hist-bar {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px solid var(--background-modifier-border);
+}
+
+.mini-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: var(--text-muted);
+  transition: background 0.15s, color 0.15s;
+}
+
+.mini-icon-btn:hover {
+  background: var(--background-modifier-hover);
+  color: var(--text-normal);
+}
+
+.mini-hist-list {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.mini-hist-item {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  padding: 6px 8px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.mini-hist-item:hover {
+  background: var(--background-modifier-hover);
+}
+
+.mini-hist-head {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-size: var(--font-smaller);
+  color: var(--text-muted);
+}
+
+.mini-hist-head .mini-hist-src {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mini-hist-item .mini-icon-btn {
+  opacity: 0.55;
+  flex-shrink: 0;
+}
+
+.mini-hist-item .mini-icon-btn:hover {
+  opacity: 1;
+}
+
+.mini-hist-prev {
+  font-size: var(--font-smaller);
+  color: var(--text-normal);
+  margin-top: 3px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mini-hist-detail {
+  margin-top: 5px;
+  padding-top: 4px;
+  border-top: 1px dashed var(--background-modifier-border);
+  font-size: var(--font-smaller);
+  color: var(--text-faint);
+  line-height: 1.7;
+  word-break: break-all;
+}
+
+/* ---------- 多选全文翻译弹窗 ---------- */
+.mini-pick-summary {
+  margin-top: 10px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: var(--background-secondary);
+  font-size: var(--font-ui-small);
+  color: var(--text-normal);
+  line-height: 1.6;
+}
+
+.mini-pick-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 3px 6px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.mini-pick-row:hover {
+  background: var(--background-modifier-hover);
+}
+
+.mini-pick-name {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: var(--font-smaller);
+}
+
+.mini-pick-stat {
+  flex-shrink: 0;
+  font-size: var(--font-smaller);
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+/* ---------- 全文翻译进度窗（应用内弹窗版） ---------- */
+.mini-prog-modal {
+  min-width: 360px;
+  max-width: 480px;
+}
+.mini-prog-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  cursor: move;
+  user-select: none;
+}
+.mini-prog-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--text-accent);
+  animation: mini-prog-pulse 1.2s ease-in-out infinite;
+}
+.mini-prog-phase {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+.mini-prog-detail {
+  color: var(--text-muted);
+  font-size: 12px;
+  min-height: 16px;
+  margin-bottom: 10px;
+  word-break: break-all;
+}
+.mini-prog-bar {
+  height: 10px;
+  border-radius: 6px;
+  background: var(--background-modifier-border);
+  overflow: hidden;
+  position: relative;
+}
+.mini-prog-fill {
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  background: linear-gradient(90deg, var(--text-accent), var(--text-accent-hover));
+  transform: scaleX(0);
+  transform-origin: left center;
+  will-change: transform;
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+.mini-prog-fill::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+  animation: mini-prog-shine 1.6s linear infinite;
+}
+.mini-prog-pct {
+  font-size: 12px;
+  color: var(--text-muted);
+  text-align: right;
+  margin-top: 4px;
+}
+.mini-prog-indet .mini-prog-fill {
+  width: 35%;
+  transition: none;
+  animation: mini-prog-slide 1.4s ease-in-out infinite;
+}
+.mini-prog-complete .mini-prog-fill {
+  animation: mini-prog-complete-pulse 0.42s ease-in-out;
+}
+.mini-prog-error .mini-prog-dot {
+  background: var(--text-error, #d94c4c);
+  animation: none;
+}
+.mini-prog-error .mini-prog-fill {
+  background: var(--text-error, #d94c4c);
+  animation: none;
+}
+.mini-prog-error .mini-prog-fill::after {
+  animation: none;
+  opacity: 0;
+}
+.mini-prog-error .mini-prog-pct {
+  color: var(--text-error, #d94c4c);
+  font-weight: 600;
+}
+.mini-prog-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 8px;
+  min-height: 16px;
+}
+.mini-prog-foot {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 14px;
+}
+@keyframes mini-prog-shine {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(100%); }
+}
+@keyframes mini-prog-slide {
+  0% { transform: translateX(-110%); }
+  100% { transform: translateX(320%); }
+}
+@keyframes mini-prog-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+@keyframes mini-prog-complete-pulse {
+  0%, 100% { filter: brightness(1); }
+  50% { filter: brightness(1.42); }
+}
+
+/* 进度窗不再自绘 ✕：直接复用 Obsidian 原生关闭按钮（点击走 close() → 未完成转最小化），
+   构造上只有一个关闭按钮，杜绝双 ✕ */
+
+.translation-orb-host {
+  --orb-size: 40px;
+  --translation-orb-x: 0px;
+  --translation-orb-y: 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  width: var(--orb-size);
+  height: var(--orb-size);
+  transform: translate3d(var(--translation-orb-x), var(--translation-orb-y), 0);
+  touch-action: none;
+  user-select: none;
+  cursor: grab;
+  contain: layout style;
+}
+
+.translation-orb-host[hidden] {
+  display: none;
+}
+
+.translation-orb-host.is-dragging {
+  cursor: grabbing;
+}
+
+.translation-orb-host:focus-visible {
+  outline: 3px solid var(--interactive-accent, #7d8fc8);
+  outline-offset: 5px;
+  border-radius: 50%;
+}
+
+.translation-orb {
+  --progress-offset: 32;
+  --translation-orb-shell: #d8dcda;
+  --translation-orb-tone-a: #586167;
+  --translation-orb-tone-b: #9da6a5;
+  --translation-orb-tone-c: #d7dad4;
+  --translation-orb-accent: #596571;
+  --translation-orb-track: rgb(46 52 51 / 0.2);
+  --translation-orb-value: #303b40;
+  --translation-orb-ring-shadow: rgb(255 255 255 / 0.7);
+  position: relative;
+  isolation: isolate;
+  width: var(--orb-size, 40px);
+  height: var(--orb-size, 40px);
+  flex: 0 0 var(--orb-size, 40px);
+  border-radius: 50%;
+  /* 去黑边：不画深色轮廓、不投深色外阴影，球体直接融入背景 */
+  background: var(--translation-orb-shell);
+  box-shadow: none;
+  /* 整球轻浮动：缓慢上下沉浮，让球"活"在页面上（host 管定位，内层 transform 不冲突） */
+  animation: translation-orb-float 4.6s ease-in-out infinite;
+}
+
+/* 淡金描边：1px 锥形渐变金环贴球缘，亮部分布不对称（像光扫过金边）；
+   mask 环形镂空只留边线、不遮内部；整体 opacity 0.6，金感很淡 */
+.translation-orb::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 9;
+  border-radius: 50%;
+  padding: 1px;
+  background: conic-gradient(
+    from 205deg,
+    rgb(255 222 150 / 0.55),
+    rgb(255 244 216 / 0.14) 80deg,
+    rgb(255 214 120 / 0.42) 170deg,
+    rgb(255 238 196 / 0.16) 260deg,
+    rgb(255 222 150 / 0.55)
+  );
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+}
+
+@keyframes translation-orb-float {
+  0%, 100% { transform: translateY(0.5px); }
+  50% { transform: translateY(-1.5px); }
+}
+
+.translation-orb__halo,
+.translation-orb__core,
+.translation-orb__layer,
+.translation-orb__texture,
+.translation-orb__highlight,
+.translation-orb__reflection,
+.translation-orb__progress {
+  position: absolute;
+  inset: 0;
+  display: block;
+  pointer-events: none;
+}
+
+.translation-orb__halo {
+  inset: -3px;
+  z-index: -1;
+  border-radius: 50%;
+  /* 光晕掺一缕金并缓慢呼吸：球缘周期性浮出一圈暖光 */
+  background: radial-gradient(circle,
+    color-mix(in srgb, var(--translation-orb-accent) 60%, rgb(226 186 106 / 0.9)) 0 48%,
+    transparent 72%);
+  animation: translation-orb-halo-breathe 3.2s ease-in-out infinite;
+}
+
+@keyframes translation-orb-halo-breathe {
+  0%, 100% { opacity: 0.3; transform: scale(0.94); }
+  50% { opacity: 0.75; transform: scale(1.07); }
+}
+
+.translation-orb__core {
+  inset: 2px;
+  overflow: hidden;
+  /* 内缘白边→香槟金描边，加一圈极淡金色内辉，与外圈金环呼应 */
+  border: 0;
+  border-radius: 50%;
+  background: var(--translation-orb-shell);
+  box-shadow: inset 0 -6px 10px rgb(9 12 13 / 0.06);
+}
+
+/* 全局流光：锥形高光楔块绕核旋转，从皮层下方扫过（core 裁成圆内），
+   给所有皮肤持续加"光在动"的感觉 */
+.translation-orb__core::before {
+  content: "";
+  position: absolute;
+  inset: -22%;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0 55%,
+    rgb(255 255 255 / 0.16) 66%,
+    rgb(255 255 255 / 0.42) 78%,
+    rgb(255 242 208 / 0.3) 86%,
+    transparent 96%
+  );
+  animation: translation-orb-sheen 5.5s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes translation-orb-sheen {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.translation-orb__highlight {
+  inset: 4px 7px 21px 8px;
+  z-index: 5;
+  border-radius: 50%;
+  /* 高光尾端带一点暖金，与金边呼应；透明度缓慢起伏（玻璃反光呼吸） */
+  background: linear-gradient(140deg, rgb(255 255 255 / 0.78), rgb(255 243 210 / 0.3) 48%, rgb(255 255 255 / 0) 85%);
+  filter: blur(0.2px);
+  animation: translation-orb-highlight 4s ease-in-out infinite;
+}
+
+@keyframes translation-orb-highlight {
+  0%, 100% { opacity: 0.55; }
+  50% { opacity: 0.9; }
+}
+
+.translation-orb__reflection {
+  inset: 25px 8px 5px 13px;
+  z-index: 5;
+  border-radius: 50%;
+  background: rgb(255 255 255 / 0.17);
+  filter: blur(2px);
+}
+
+.translation-orb__progress {
+  z-index: 8;
+  width: 40px;
+  height: 40px;
+  overflow: visible;
+  fill: none;
+  transform: rotate(-90deg);
+}
+
+.translation-orb__track {
+  vector-effect: non-scaling-stroke;
+  stroke-width: 3;
+}
+
+.translation-orb__track {
+  stroke: var(--translation-orb-track);
+}
+/* 去黑边：皮肤 token 的轨道色在浅色下偏深，形成一圈“黑环”；
+   按当前表面直接改用极浅的半透明中性色（球上挂了 data-translation-orb-surface） */
+.translation-orb[data-translation-orb-surface="light"] .translation-orb__track {
+  stroke: rgb(110 120 145 / 0.14);
+}
+.translation-orb[data-translation-orb-surface="dark"] .translation-orb__track {
+  stroke: rgb(225 232 240 / 0.16);
+}
+/* 进度弧也换浅色：浅色表面下皮肤 token 是深色描边，改为白色细线，
+   加一层很淡的中性投影保证在浅球浅底上仍可读（不形成黑边） */
+.translation-orb[data-translation-orb-surface="light"] .translation-orb__value {
+  stroke: var(--translation-orb-value);
+  filter: none;
+}
+
+.translation-orb__value {
+  vector-effect: non-scaling-stroke;
+  stroke-width: 3;
+  stroke: var(--translation-orb-value);
+  stroke-dashoffset: var(--progress-offset);
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.25s linear;
+  filter: drop-shadow(0 0.5px 0 var(--translation-orb-ring-shadow));
+}
+
+.translation-orb[data-translation-orb-state="determinate"] .translation-orb__value {
+  stroke-dasharray: 100 0;
+  stroke-dashoffset: var(--progress-offset);
+}
+
+.translation-orb[data-translation-orb-state="indeterminate"] .translation-orb__value {
+  stroke-dasharray: 24 76;
+  stroke-dashoffset: 8;
+}
+
+.translation-orb[data-translation-orb-state="indeterminate"] .translation-orb__progress {
+  animation: translation-orb-progress-spin 1.35s linear infinite;
+}
+
+/* 完成时轻弹一下，反馈进度已同步到 100%；不改变原有皮肤和尺寸缩放。 */
+.translation-orb.is-complete {
+  animation: translation-orb-complete-bounce 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+@keyframes translation-orb-complete-bounce {
+  0% { transform: scale(1.14); }
+  58% { transform: scale(0.98); }
+  100% { transform: scale(1); }
+}
+
+/* Ink wash: asymmetric, overlapping pigment blooms. */
+.translation-orb[data-skin="ink-wash"] .translation-orb__layer--a {
+  inset: -5px 9px 9px -7px;
+  border-radius: 63% 37% 48% 52%;
+  background: radial-gradient(circle at 68% 46%, var(--translation-orb-tone-a), transparent 72%);
+  filter: blur(1.2px);
+  opacity: 0.88;
+  animation: translation-orb-ink-breathe-a 3s ease-in-out infinite;
+}
+
+.translation-orb[data-skin="ink-wash"] .translation-orb__layer--b {
+  inset: 9px -8px -6px 6px;
+  border-radius: 38% 62% 57% 43%;
+  background: radial-gradient(circle at 32% 34%, var(--translation-orb-tone-b), transparent 70%);
+  filter: blur(1.8px);
+  opacity: 0.74;
+  animation: translation-orb-ink-breathe-b 3.4s ease-in-out infinite;
+}
+
+.translation-orb[data-skin="ink-wash"] .translation-orb__layer--c {
+  inset: 14px 5px -7px -3px;
+  border-radius: 70% 30% 58% 42%;
+  background: var(--translation-orb-tone-c);
+  filter: blur(3px);
+  opacity: 0.38;
+}
+
+.translation-orb[data-skin="ink-wash"] .translation-orb__texture {
+  background: radial-gradient(circle at 61% 28%, rgb(255 255 255 / 0.18) 0 1px, transparent 1.6px);
+  opacity: 0.8;
+}
+
+/* Galaxy: an oblique band and deliberately sparse, fixed star points. */
+.translation-orb[data-skin="galaxy"] .translation-orb__layer--a {
+  inset: 12px -7px 10px -7px;
+  background: linear-gradient(102deg, transparent, var(--translation-orb-tone-b) 32%, var(--translation-orb-tone-a) 61%, transparent);
+  filter: blur(2px);
+  opacity: 0.88;
+  transform: skewY(-17deg);
+  animation: translation-orb-galaxy-band 3.2s ease-in-out infinite;
+}
+
+.translation-orb[data-skin="galaxy"] .translation-orb__layer--b {
+  inset: 15px -9px 12px -9px;
+  background: var(--translation-orb-accent);
+  filter: blur(4px);
+  opacity: 0.32;
+  transform: skewY(-17deg);
+}
+
+.translation-orb[data-skin="galaxy"] .translation-orb__layer--c {
+  background: radial-gradient(circle at 73% 71%, var(--translation-orb-tone-c), transparent 24%);
+  opacity: 0.55;
+}
+
+.translation-orb[data-skin="galaxy"] .translation-orb__texture {
+  z-index: 4;
+  background:
+    radial-gradient(circle at 27% 27%, rgb(255 255 255 / 0.92) 0 0.6px, transparent 1px),
+    radial-gradient(circle at 66% 22%, rgb(255 255 255 / 0.7) 0 0.5px, transparent 1px),
+    radial-gradient(circle at 76% 58%, rgb(255 255 255 / 0.8) 0 0.7px, transparent 1.1px),
+    radial-gradient(circle at 38% 72%, rgb(255 255 255 / 0.58) 0 0.5px, transparent 1px),
+    radial-gradient(circle at 19% 55%, rgb(255 255 255 / 0.65) 0 0.45px, transparent 0.9px);
+  animation: translation-orb-star-pulse 2.8s ease-in-out infinite;
+}
+
+/* Water wave: two discrete tide bands crossing the lower hemisphere. */
+.translation-orb[data-skin="water-wave"] .translation-orb__layer--a {
+  inset: 17px -7px -6px -7px;
+  border-radius: 50% 44% 0 0;
+  background: linear-gradient(180deg, var(--translation-orb-tone-b), var(--translation-orb-tone-a));
+  opacity: 0.78;
+  animation: translation-orb-tide-near 3s ease-in-out infinite;
+}
+
+.translation-orb[data-skin="water-wave"] .translation-orb__layer--b {
+  inset: 12px -9px -10px -9px;
+  border-radius: 42% 56% 0 0;
+  background: var(--translation-orb-tone-c);
+  opacity: 0.36;
+  animation: translation-orb-tide-far 3.4s ease-in-out infinite;
+}
+
+.translation-orb[data-skin="water-wave"] .translation-orb__layer--c {
+  inset: 7px 8px 16px 4px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgb(255 255 255 / 0.3), transparent);
+  filter: blur(3px);
+}
+
+.translation-orb[data-skin="water-wave"] .translation-orb__texture {
+  inset: 20px 4px 11px;
+  z-index: 4;
+  border-top: 1px solid rgb(255 255 255 / 0.48);
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+/* Amber glow: a grounded convection pool rising from the bottom. */
+.translation-orb[data-skin="amber-glow"] .translation-orb__layer--a {
+  inset: 20px -4px -7px -4px;
+  border-radius: 55% 45% 0 0;
+  background: radial-gradient(ellipse at 50% 100%, var(--translation-orb-tone-a), var(--translation-orb-tone-b) 64%, transparent 70%);
+  filter: blur(0.8px);
+  opacity: 0.9;
+  animation: translation-orb-amber-pool 3.2s ease-in-out infinite;
+}
+
+.translation-orb[data-skin="amber-glow"] .translation-orb__layer--b {
+  inset: 12px 8px 8px 11px;
+  border-radius: 50%;
+  background: var(--translation-orb-tone-c);
+  filter: blur(4px);
+  opacity: 0.46;
+  animation: translation-orb-amber-plume-a 3s ease-in-out infinite;
+}
+
+.translation-orb[data-skin="amber-glow"] .translation-orb__layer--c {
+  inset: 8px 17px 13px 6px;
+  border-radius: 50%;
+  background: var(--translation-orb-accent);
+  filter: blur(4px);
+  opacity: 0.25;
+  animation: translation-orb-amber-plume-b 3.4s ease-in-out infinite;
+}
+
+.translation-orb[data-skin="amber-glow"] .translation-orb__texture {
+  background: linear-gradient(180deg, transparent 43%, rgb(255 255 255 / 0.12));
+}
+
+/* Frost prism: static skewed facets, intentionally without ambient motion. */
+.translation-orb[data-skin="frost-prism"] .translation-orb__layer--a {
+  inset: 3px 14px 6px 3px;
+  border-radius: 28% 72% 46% 54% / 18% 34% 66% 82%;
+  background: linear-gradient(142deg, var(--translation-orb-tone-c), var(--translation-orb-tone-a));
+  opacity: 0.65;
+  transform: rotate(13deg) skewX(-8deg);
+}
+
+.translation-orb[data-skin="frost-prism"] .translation-orb__layer--b {
+  inset: 9px 2px 2px 15px;
+  border-radius: 72% 28% 22% 64% / 24% 38% 62% 76%;
+  background: linear-gradient(30deg, var(--translation-orb-tone-a), var(--translation-orb-tone-b));
+  opacity: 0.6;
+  transform: rotate(-12deg) skewY(7deg);
+}
+
+.translation-orb[data-skin="frost-prism"] .translation-orb__layer--c {
+  inset: 2px 4px 17px 12px;
+  border-radius: 38% 62% 70% 30% / 20% 26% 74% 80%;
+  background: var(--translation-orb-tone-c);
+  opacity: 0.42;
+  transform: rotate(8deg) skewX(6deg);
+}
+
+.translation-orb[data-skin="frost-prism"] .translation-orb__texture {
+  inset: 5px;
+  z-index: 4;
+  border-radius: 50%;
+  background:
+    linear-gradient(78deg, transparent 0 46%, rgb(255 255 255 / 0.34) 47% 50%, transparent 51%),
+    linear-gradient(146deg, transparent 0 48%, rgb(255 255 255 / 0.3) 49% 53%, transparent 54%);
+  opacity: 0.72;
+}
+
+@keyframes translation-orb-progress-spin {
+  from { transform: rotate(-90deg); }
+  to { transform: rotate(270deg); }
+}
+
+@keyframes translation-orb-ink-breathe-a {
+  0%, 100% { transform: translate(-2px, 2px) scale(0.98); opacity: 0.7; }
+  50% { transform: translate(3px, -2px) scale(1.1); opacity: 1; }
+}
+
+@keyframes translation-orb-ink-breathe-b {
+  0%, 100% { transform: translate(2px, -1px) scale(1.06); opacity: 0.55; }
+  50% { transform: translate(-3px, 3px) scale(0.94); opacity: 0.9; }
+}
+
+@keyframes translation-orb-galaxy-band {
+  0%, 100% { transform: translate(-3px, 2px) skewY(-17deg); opacity: 0.62; }
+  50% { transform: translate(3px, -3px) skewY(-17deg); opacity: 1; }
+}
+
+@keyframes translation-orb-star-pulse {
+  0%, 100% { opacity: 0.35; }
+  50% { opacity: 1; }
+}
+
+@keyframes translation-orb-tide-near {
+  0%, 100% { transform: translate(-4px, 2px) scale(1); opacity: 0.68; }
+  50% { transform: translate(4px, -2px) scale(1.09); opacity: 0.96; }
+}
+
+@keyframes translation-orb-tide-far {
+  0%, 100% { transform: translate(3px, -2px) scale(1.04); opacity: 0.22; }
+  50% { transform: translate(-3px, 2px) scale(1.1); opacity: 0.55; }
+}
+
+@keyframes translation-orb-amber-pool {
+  0%, 100% { transform: translate(0, 2px) scale(1); opacity: 0.72; }
+  50% { transform: translate(0, -4px) scale(1.12); opacity: 1; }
+}
+
+@keyframes translation-orb-amber-plume-a {
+  0%, 100% { transform: translate(-2px, 3px) scale(0.94); opacity: 0.22; }
+  50% { transform: translate(3px, -3px) scale(1.1); opacity: 0.62; }
+}
+
+@keyframes translation-orb-amber-plume-b {
+  0%, 100% { transform: translate(2px, 3px) scale(1); opacity: 0.12; }
+  50% { transform: translate(-2px, -2px) scale(1.08); opacity: 0.4; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .translation-orb.translation-orb,
+  .translation-orb.translation-orb[data-skin] * {
+    animation: none;
+    transition: none;
+  }
+
+  /* 伪元素不命中 * 选择器：流光/金环/光晕也要一并静止。 */
+  .translation-orb.translation-orb::after,
+  .translation-orb.translation-orb .translation-orb__core::before,
+  .translation-orb.translation-orb .translation-orb__halo {
+    animation: none;
+    transition: none;
+  }
+}
+
+/* 设置页「悬浮球皮肤」实时预览：把 40px 球居中摆进浅底容器（仅设置页用） */
+.mini-orb-preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+  margin: 4px 0 12px;
+  border-radius: var(--radius-m);
+  background: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+}
+
+/* 水墨游鱼：移植自 orb-redesign-demo.html。
+   最外围恒定绕圈的大鱼已按要求移除，只保留池内三尾墨鲤。 */
+.translation-orb__ink-water {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  display: none;
+  overflow: visible;
+  scale: var(--orb-scale, 1);
+  transform-origin: 0 0;
+}
+
+.translation-orb[data-skin="ink-wash"] {
+  background: transparent;
+  box-shadow: none;
+}
+
+.translation-orb[data-skin="ink-wash"]::after,
+.translation-orb[data-skin="ink-wash"] > .translation-orb__halo,
+.translation-orb[data-skin="ink-wash"] > .translation-orb__core,
+.translation-orb[data-skin="ink-wash"] > .translation-orb__progress {
+  display: none;
+}
+
+.translation-orb[data-skin="ink-wash"] > .translation-orb__ink-water {
+  display: block;
+}
+
+.translation-orb[data-translation-orb-surface="light"] .translation-orb__ink-water {
+  --ik-paper1: #f7f5ef;
+  --ik-paper2: #ece8dc;
+  --ik-paper3: #ddd7c8;
+  --ik-pool: rgb(44 58 68 / 0.14);
+  --koi-body: #faf8f2;
+  --koi-body2: #e8e3d7;
+  --koi-ink: #333f47;
+  --koi-ripple: rgb(45 58 64 / 0.35);
+  --koi-pad: #b7c1bc;
+  --koi-pad-line: #87958e;
+}
+
+.translation-orb[data-translation-orb-surface="dark"] .translation-orb__ink-water {
+  --ik-paper1: #2b3032;
+  --ik-paper2: #222728;
+  --ik-paper3: #191d1e;
+  --ik-pool: rgb(210 220 218 / 0.1);
+  --koi-body: #262c30;
+  --koi-body2: #1a2023;
+  --koi-ink: #c6d0d0;
+  --koi-ripple: rgb(215 224 224 / 0.3);
+  --koi-pad: #39434a;
+  --koi-pad-line: #5a676e;
+}
+
+.translation-orb__ink-water .ink-water-svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.translation-orb__ink-water .breath {
+  animation: translation-orb-ink-water-breath 4.2s ease-in-out infinite;
+  transform-box: view-box;
+  transform-origin: 64px 64px;
+}
+
+.translation-orb__ink-water .breath-ring {
+  animation: translation-orb-ink-water-ring-breath 4.5s ease-in-out infinite 0.4s;
+  transform-box: view-box;
+  transform-origin: 64px 64px;
+}
+
+.translation-orb__ink-water .ring-ink {
+  animation: translation-orb-ink-water-ring-drift 140s linear infinite;
+  mix-blend-mode: multiply;
+  transform-box: view-box;
+  transform-origin: 64px 64px;
+}
+
+.translation-orb[data-translation-orb-surface="dark"] .ring-ink {
+  filter: invert(1);
+  mix-blend-mode: screen;
+}
+
+.translation-orb__ink-water .drift-a {
+  animation: translation-orb-ink-water-drift-a 9s ease-in-out infinite alternate;
+}
+
+.translation-orb__ink-water .drift-b {
+  animation: translation-orb-ink-water-drift-b 11s ease-in-out infinite alternate;
+}
+
+.translation-orb__ink-water .koi-flex {
+  animation: translation-orb-ink-water-flex 1.3s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.translation-orb__ink-water .koi-tail {
+  animation: translation-orb-ink-water-wag 0.55s ease-in-out infinite alternate;
+  transform-box: fill-box;
+  transform-origin: 100% 50%;
+}
+
+.translation-orb__ink-water .inside-koi {
+  pointer-events: none;
+  transform-box: view-box;
+  transform-origin: 0 0;
+  will-change: transform;
+}
+
+.translation-orb__ink-water .inside-koi .koi-flex { animation-duration: 1.15s; }
+.translation-orb__ink-water .inside-koi--2 .koi-flex { animation-delay: -0.4s; animation-duration: 1.45s; }
+.translation-orb__ink-water .inside-koi--3 .koi-flex { animation-delay: -0.8s; animation-duration: 1.65s; }
+.translation-orb__ink-water .inside-koi--2 .koi-tail { animation-duration: 0.67s; }
+.translation-orb__ink-water .inside-koi--3 .koi-tail { animation-duration: 0.78s; }
+.translation-orb__ink-water .inside-koi--2 { opacity: 0.82; }
+.translation-orb__ink-water .inside-koi--3 { opacity: 0.68; }
+
+.translation-orb__ink-water .inside-wake circle {
+  animation: translation-orb-ink-water-wake 1.55s ease-out infinite;
+  fill: none;
+  stroke: var(--koi-ripple);
+  stroke-width: 0.85;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.translation-orb__ink-water .inside-wake .w2 { animation-delay: 0.76s; }
+.translation-orb__ink-water .lilypad {
+  animation: translation-orb-ink-water-bob 3.8s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.translation-orb__ink-water .lp2 { animation-delay: 1.2s; }
+.translation-orb__ink-water .lp3 { animation-delay: 2.2s; }
+.translation-orb__ink-water .lp4 { animation-delay: 0.6s; }
+
+.translation-orb__ink-water .petal {
+  animation: translation-orb-ink-water-petal 9s ease-in-out infinite alternate;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.translation-orb__ink-water .p2 { animation-delay: 2s; animation-duration: 11s; }
+
+.translation-orb__ink-water .inside-ink-bloom {
+  animation: translation-orb-ink-water-pond 7.4s ease-in-out infinite;
+  transform-box: view-box;
+  transform-origin: 64px 64px;
+}
+
+.translation-orb__ink-water .ink-mote {
+  animation: translation-orb-ink-water-mote 6s ease-in-out infinite alternate;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.translation-orb__ink-water .mote-2 { animation-delay: -2.4s; animation-duration: 8.2s; }
+.translation-orb__ink-water .mote-3 { animation-delay: -4.1s; animation-duration: 7.1s; }
+.translation-orb__ink-water .koi-startled .inside-wake circle { animation-duration: 0.48s; opacity: 0.72; }
+
+@keyframes translation-orb-ink-water-breath {
+  0%, 100% { opacity: 0.88; transform: scale(0.98); }
+  50% { opacity: 1; transform: scale(1.02); }
+}
+@keyframes translation-orb-ink-water-ring-breath {
+  0%, 100% { opacity: 0.9; transform: scale(0.982); }
+  50% { opacity: 1; transform: scale(1.018); }
+}
+@keyframes translation-orb-ink-water-ring-drift { to { transform: rotate(360deg); } }
+@keyframes translation-orb-ink-water-drift-a {
+  from { transform: translate(-3px, 2px) scale(1); }
+  to { transform: translate(4px, -3px) scale(1.07); }
+}
+@keyframes translation-orb-ink-water-drift-b {
+  from { transform: translate(3px, -2px) scale(1.05); }
+  to { transform: translate(-4px, 3px) scale(0.96); }
+}
+@keyframes translation-orb-ink-water-flex {
+  0%, 100% { transform: scaleX(1) skewY(0deg); }
+  50% { transform: scaleX(0.93) skewY(2.5deg); }
+}
+@keyframes translation-orb-ink-water-wag {
+  from { transform: rotate(9deg); }
+  to { transform: rotate(-9deg); }
+}
+@keyframes translation-orb-ink-water-wake {
+  from { opacity: 0.34; transform: scale(0.28); }
+  to { opacity: 0; transform: scale(1.48); }
+}
+@keyframes translation-orb-ink-water-bob {
+  0%, 100% { transform: translateY(-0.8px); }
+  50% { transform: translateY(0.8px); }
+}
+@keyframes translation-orb-ink-water-petal {
+  from { opacity: 0.75; transform: rotate(-16deg) translateX(-2px); }
+  to { opacity: 1; transform: rotate(16deg) translateX(2.5px); }
+}
+@keyframes translation-orb-ink-water-pond {
+  0%, 100% { opacity: 0.3; transform: scale(0.96); }
+  50% { opacity: 0.58; transform: scale(1.04); }
+}
+@keyframes translation-orb-ink-water-mote {
+  from { opacity: 0.18; transform: translate(-1px, 1px); }
+  to { opacity: 0.62; transform: translate(2px, -2px); }
+}
+
+/* 其余皮肤的最外缘只保留一层很浅的色彩过渡，不再形成深色硬边。 */
+.translation-orb:not([data-skin="ink-wash"]) {
+  background: transparent;
+}
+
+.translation-orb:not([data-skin="ink-wash"]) .translation-orb__core {
+  inset: 0;
+  border: 0;
+  box-shadow:
+    inset 0 0 5px color-mix(in srgb, var(--translation-orb-accent) 8%, transparent),
+    inset 0 0 2px rgb(255 255 255 / 0.14);
+}
+
+.translation-orb:not([data-skin="ink-wash"]) .translation-orb__core::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 7;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    transparent 72%,
+    color-mix(in srgb, var(--translation-orb-accent) 7%, rgb(255 255 255 / 0.34)) 100%
+  );
+  pointer-events: none;
+}
+
+.translation-orb:not([data-skin="ink-wash"]) .translation-orb__halo {
+  inset: -1px;
+  background: radial-gradient(
+    circle,
+    color-mix(in srgb, var(--translation-orb-accent) 12%, transparent) 0 51%,
+    transparent 72%
+  );
+  opacity: 0.42;
+}
+
+.translation-orb:not([data-skin="ink-wash"]) .translation-orb__track {
+  stroke: rgb(255 255 255 / 0.1);
+  stroke-width: 0.55;
+}
+
+.translation-orb:not([data-skin="ink-wash"]) .translation-orb__value,
+.translation-orb:not([data-skin="ink-wash"])[data-translation-orb-surface="light"] .translation-orb__value,
+.translation-orb:not([data-skin="ink-wash"])[data-translation-orb-surface="dark"] .translation-orb__value {
+  stroke: rgb(255 255 255 / 0.24);
+  stroke-width: 0.78;
+  filter: none;
+}
+
+/* 尺寸变化时统一缩放原始 40px 视觉稿，避免各皮肤内部的固定像素布局变形。 */
+.translation-orb:not([data-skin="ink-wash"]) > .translation-orb__halo,
+.translation-orb:not([data-skin="ink-wash"]) > .translation-orb__core {
+  width: 40px;
+  height: 40px;
+  scale: var(--orb-scale, 1);
+  transform-origin: 0 0;
+}
+
+.translation-orb:not([data-skin="ink-wash"]) > .translation-orb__progress {
+  inset: auto;
+  top: var(--orb-offset, 0px);
+  left: var(--orb-offset, 0px);
+  width: 40px;
+  height: 40px;
+  scale: var(--orb-scale, 1);
+  transform-origin: 20px 20px;
+}

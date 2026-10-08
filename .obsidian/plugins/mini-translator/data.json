@@ -1,0 +1,648 @@
+{
+  "uiLanguage": "auto",
+  "primarySource": "有道",
+  "dictSource": "百度",
+  "translationSourceOrder": [
+    "有道",
+    "火山",
+    "腾讯",
+    "谷歌",
+    "Bing",
+    "CNKI"
+  ],
+  "translationSourceEnabled": [
+    "有道",
+    "火山",
+    "腾讯",
+    "谷歌",
+    "Bing",
+    "CNKI"
+  ],
+  "dictionarySourceOrder": [
+    "百度",
+    "有道词典",
+    "牛津"
+  ],
+  "dictionarySourceEnabled": [
+    "百度",
+    "有道词典",
+    "牛津"
+  ],
+  "sourceLanguage": "auto",
+  "targetLanguage": "zh-Hans",
+  "bingApiKey": "",
+  "bingRegion": "",
+  "bingEndpoint": "https://api.cognitive.microsofttranslator.com",
+  "cnkiToken": "",
+  "cnkiAuthorization": "",
+  "autoTranslate": false,
+  "autoTranslateDelay": 2,
+  "popupMaxSize": "adaptive",
+  "popupCustomMaxWidth": 760,
+  "popupCustomMaxHeight": 720,
+  "rememberPopupSize": false,
+  "popupLastSize": null,
+  "fullHtml": false,
+  "history": [
+    {
+      "ts": 1791382115969,
+      "via": "火山",
+      "pairs": [
+        {
+          "en": ") Dynamic Cue Grounding",
+          "zh": "）动态提示接地",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        }
+      ],
+      "sig": ") Dynamic Cue Grounding|）动态提示接地",
+      "file": "SignNav_Directional_Signage-Cue_Guided_Visual_Navigation_in_Large-Scale_Indoor_Environments.pdf",
+      "page": null
+    },
+    {
+      "ts": 1791380022302,
+      "via": "火山",
+      "pairs": [
+        {
+          "en": "Abstract—Robust perception in snowy conditions remains a critical challenge for autonomous vehicles. To drive progress in this area, we introduce Snowy Scenes, the ﬁrst multimodal multitask dataset captured entirely in real-world snowy conditions, combining high-resolution 128-beam LiDAR data with synchronized RGB and thermal images. Snowy Scenes includes over 5 K expertly annotated LiDAR scans with 3D bounding boxes, per-point semantic labels, and snow particle annotations. This rich annotation set enables research on 3D object detection, semantic segmentation, and point cloud denoising, both as standalone tasks and within joint multitask learning frameworks. By benchmarking existing methods, our dataset paves the way for the next generation of perception models designed to handle the complexities of snowy winter weather. Index Terms—Autonomous systems, data collection, sensor fusion, object detection, semantic segmentation, signal denoising.",
+          "zh": "摘要——雪地条件下的鲁棒感知仍然是自动驾驶汽车面临的关键挑战。为了推动这一领域的进展，我们引入了雪地场景，这是第一个完全在现实世界雪地条件下捕获的多模态多任务数据集，将高分辨率128波束激光雷达数据与同步RGB和热图像相结合。雪地场景包括超过5 K专业注释的激光雷达扫描，带有3D边界框、每点语义标签和雪粒子注释。这个丰富的注释集支持3D目标检测、语义分割和点云去噪的研究，既可以作为独立任务，也可以作为联合多任务学习框架。通过对现有方法进行基准测试，我们的数据集为旨在处理冬季下雪天气复杂性的下一代感知模型铺平了道路。 索引术语-自主系统，数据采集，传感器融合，目标检测，语义分割，信号去噪。",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        }
+      ],
+      "sig": "Abstract—Robust perception in snowy conditions remains a critical challenge for autonomous vehicles. To drive progress in this area, we introduce Snowy Scenes, the ﬁrst multimodal multitask dataset captured entirely in real-world snowy conditions, combining high-resolution 128-beam LiDAR data with synchronized RGB and thermal images. Snowy Scenes includes over 5 K expertly annotated LiDAR scans with 3D bounding boxes, per-point semantic labels, and snow particle annotations. This rich annotation set enables research on 3D object detection, semantic segmentation, and point cloud denoising, both as standalone tasks and within joint multitask learning frameworks. By benchmarking existing methods, our dataset paves the way for the next generation of perception models designed to handle the complexities of snowy winter weather. Index Terms—Autonomous systems, data collection, sensor fusion, object detection, semantic segmentation, signal denoising.|摘要——雪地条件下的鲁棒感知仍然是自动驾驶汽车面临的关键挑战。为了推动这一领域的进展，我们引入了雪地场景，这是第一个完全在现实世界雪地条件下捕获的多模态多任务数据集，将高分辨率128波束激光雷达数据与同步RGB和热图像相结合。雪地场景包括超过5 K专业注释的激光雷达扫描，带有3D边界框、每点语义标签和雪粒子注释。这个丰富的注释集支持3D目标检测、语义分割和点云去噪的研究，既可以作为独立任务，也可以作为联合多任务学习框架。通过对现有方法进行基准测试，我们的数据集为旨在处理冬季下雪天气复杂性的下一代感知模型铺平了道路。 索引术语-自主系统，数据采集，传感器融合，目标检测，语义分割，信号去噪。",
+      "file": "Snowy_Scenes_A_Multimodal_Multitask_Dataset_Toward_Snow-Tonomous_Vehicles.pdf",
+      "page": null
+    },
+    {
+      "ts": 1791379896104,
+      "via": "火山",
+      "pairs": [
+        {
+          "en": "This letter introduces Snowy Scenes, the ﬁrst multimodal dataset collected in real-world snowy conditions using highresolution 128-beam LiDAR, RGB, and thermal cameras coupled with GNSS/IMU. Leveraging our 5 K rich annotated data, our extensive benchmarking experiments with state-of-the-art models show that voxel-based methods excel in semantic segmentation and noise removal tasks. Their capacity to capture ﬁne-grained information while being agnostic to LiDAR resolution makes them the optimal choice for off-the-shelf adaptation. When it comes to the object detection task, BEV-based methods outperform other approaches. Across all three benchmarking tasks, point-based models exhibit low performance due to their limited receptive ﬁelds. Additionally, our results reveal that unsupervised point cloud denoising methods are not resolution-agnostic and require further study. Additional experiment results are provided in the supplementary material available at https://github.com/snowyscenes/dataset. As future work, leveraging GNSS/IMU data in Snowy Scenes, we plan to conduct additional experiments to benchmark SLAM algorithms under snowy conditions and address potential challenges. Limitations: Snowy Scenes has no Radar sensor. The dataset contains only front-view limited RGB and thermal cameras. There is no annotation of RGB or thermal images. No other weather conditions, such as rain and fog, are included. Localizationand mapping-related benchmarks are excluded.",
+          "zh": "这封信介绍了Snowy Scenes，这是第一个使用高分辨率128光束激光雷达、RGB和热像仪结合GNSS/IMU在现实世界下雪条件下收集的多模态数据集。利用我们5 K丰富的注释数据，我们用最先进的模型进行的广泛基准测试实验表明，基于体素的方法在语义分割和噪声去除任务中表现出色。它们在捕获细粒度信息的同时与激光雷达分辨率无关的能力使它们成为现成适应的最佳选择。在目标检测任务方面，基于BEV的方法优于其他方法。在所有三个基准测试任务中，基于点的模型由于其有限的接收场而表现出低性能。 此外，我们的结果揭示了无监督点云去噪方法不是分辨率不可知的，需要进一步研究。额外的实验结果在https://github.com/snowyscenes/dataset提供的补充材料中提供。作为未来的工作，利用雪域场景中的GNSS/IMU数据，我们计划进行额外的实验，以在雪域条件下对SLAM算法进行基准测试，并解决潜在的挑战。限制：雪域场景没有雷达传感器。该数据集仅包含前视图有限的RGB和热像仪。没有RGB或热像仪的注释。不包括其他天气条件，例如雨和雾。本地化和地图相关的基准被排除在外。",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        }
+      ],
+      "sig": "This letter introduces Snowy Scenes, the ﬁrst multimodal dataset collected in real-world snowy conditions using highresolution 128-beam LiDAR, RGB, and thermal cameras coupled with GNSS/IMU. Leveraging our 5 K rich annotated data, our extensive benchmarking experiments with state-of-the-art models show that voxel-based methods excel in semantic segmentation and noise removal tasks. Their capacity to capture ﬁne-grained information while being agnostic to LiDAR resolution makes them the optimal choice for off-the-shelf adaptation. When it comes to the object detection task, BEV-based methods outperform other approaches. Across all three benchmarking tasks, point-based models exhibit low performance due to their limited receptive ﬁelds. Additionally, our results reveal that unsupervised point cloud denoising methods are not resolution-agnostic and require further study. Additional experiment results are provided in the supplementary material available at https://github.com/snowyscenes/dataset. As future work, leveraging GNSS/IMU data in Snowy Scenes, we plan to conduct additional experiments to benchmark SLAM algorithms under snowy conditions and address potential challenges. Limitations: Snowy Scenes has no Radar sensor. The dataset contains only front-view limited RGB and thermal cameras. There is no annotation of RGB or thermal images. No other weather conditions, such as rain and fog, are included. Localizationand mapping-related benchmarks are excluded.|这封信介绍了Snowy Scenes，这是第一个使用高分辨率128光束激光雷达、RGB和热像仪结合GNSS/IMU在现实世界下雪条件下收集的多模态数据集。利用我们5 K丰富的注释数据，我们用最先进的模型进行的广泛基准测试实验表明，基于体素的方法在语义分割和噪声去除任务中表现出色。它们在捕获细粒度信息的同时与激光雷达分辨率无关的能力使它们成为现成适应的最佳选择。在目标检测任务方面，基于BEV的方法优于其他方法。在所有三个基准测试任务中，基于点的模型由于其有限的接收场而表现出低性能。 此外，我们的结果揭示了无监督点云去噪方法不是分辨率不可知的，需要进一步研究。额外的实验结果在https://github.com/snowyscenes/dataset提供的补充材料中提供。作为未来的工作，利用雪域场景中的GNSS/IMU数据，我们计划进行额外的实验，以在雪域条件下对SLAM算法进行基准测试，并解决潜在的挑战。限制：雪域场景没有雷达传感器。该数据集仅包含前视图有限的RGB和热像仪。没有RGB或热像仪的注释。不包括其他天气条件，例如雨和雾。本地化和地图相关的基准被排除在外。",
+      "file": "Snowy_Scenes_A_Multimodal_Multitask_Dataset_Toward_Snow-Tonomous_Vehicles.pdf",
+      "page": null
+    },
+    {
+      "ts": 1791379883981,
+      "via": "火山",
+      "pairs": [
+        {
+          "en": "Data Illustration",
+          "zh": "数据插图",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        }
+      ],
+      "sig": "Data Illustration|数据插图",
+      "file": "Snowy_Scenes_A_Multimodal_Multitask_Dataset_Toward_Snow-Tonomous_Vehicles.pdf",
+      "page": null
+    },
+    {
+      "ts": 1791379879025,
+      "via": "火山",
+      "pairs": [
+        {
+          "en": "Data Statistics",
+          "zh": "数据统计",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        }
+      ],
+      "sig": "Data Statistics|数据统计",
+      "file": "Snowy_Scenes_A_Multimodal_Multitask_Dataset_Toward_Snow-Tonomous_Vehicles.pdf",
+      "page": null
+    },
+    {
+      "ts": 1791379874734,
+      "via": "火山",
+      "pairs": [
+        {
+          "en": "ata Privacy Protection",
+          "zh": "ATA隐私保护",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        }
+      ],
+      "sig": "ata Privacy Protection|ATA隐私保护",
+      "file": "Snowy_Scenes_A_Multimodal_Multitask_Dataset_Toward_Snow-Tonomous_Vehicles.pdf",
+      "page": null
+    },
+    {
+      "ts": 1791379868851,
+      "via": "火山",
+      "pairs": [
+        {
+          "en": "Data Annotation",
+          "zh": "数据标注",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        }
+      ],
+      "sig": "Data Annotation|数据标注",
+      "file": "Snowy_Scenes_A_Multimodal_Multitask_Dataset_Toward_Snow-Tonomous_Vehicles.pdf",
+      "page": null
+    },
+    {
+      "ts": 1791378882703,
+      "via": "火山",
+      "pairs": [
+        {
+          "en": "Due to the nature of spinning LiDAR measurements, it is crucial to compensate for the distortion caused by motion during continuous measurements. The motion distortion is 10866 IEEE ROBOTICS AND AUTOMATION LETTERS, VOL. 11, NO. 9, SEPTEMBER 2026 Fig. 3. Route maps with sample RGB and thermal images, taken from ﬁve locations: a–e. The two Otaniemi routes align with each other, and the ﬁrst two images were taken at the same location at different times. The color of each image frame matches its corresponding routes on the map. The thicker colored parts of the routes indicate the annotated frames. compensated by utilizing a post-processed GNSS/IMU trajectory derived from Novatel Inertial Explorer software and data from nearby GNSS base stations. First, the LiDAR trajectory, deﬁned as the pose of the LiDAR with respect to time, is exported in the global frame. Second, to georeference LiDAR measurements point-wise into the global frame, each range and intensity measurement (i.e., point) is individually transformed into the global frame by using a pose of the LiDAR at the time of each measurement. The continuous LiDAR data is split into scans, i.e., full 360◦ rotations of the spinning LiDAR. To compensate for motion, the LiDAR readings from each scan are reprojected into a ﬁxed frame. The frame’s pose is deﬁned according to the LiDAR’s pose at the time of the ﬁrst scan measurement. Finally, the points associated with a scan are selected from the georeferenced point cloud and transformed into the ﬁxed frame separately for each scan in the LiDAR data to produce ﬁnal motion-compensated scans.",
+          "zh": "由于旋转激光雷达测量的性质，补偿连续测量过程中运动引起的失真至关重要。运动失真为10866 IEEE ROBOTICS AND AUTOMATION LETTERS， VOL.11，NO.9，SEPTEMBER 2026图3。带有样本RGB和热图像的路线图，取自五个位置：a-e。两条Otaniemi路线相互对齐，前两张图像在不同时间在同一位置拍摄。每个图像帧的颜色与其在地图上的相应路线相匹配。 路线中较厚的彩色部分表示带注释的框架。通过使用来自Novatel Inerential Explorer软件的后处理GNSS/IMU轨迹和来自附近GNSS基站的数据进行补偿。首先，激光雷达轨迹，定义为激光雷达相对于时间的位姿，在全局帧中导出。其次，为了将激光雷达测量点到全局帧中，每个范围和强度测量（即点）通过在每次测量时使用激光雷达的位姿单独转换到全局帧中。连续的激光雷达数据被分成扫描，即旋转激光雷达的360度旋转。 为了补偿运动，每次扫描的激光雷达读数被重新投影到固定帧中。帧的姿态根据第一次扫描测量时激光雷达的姿态定义。最后，从地理参考点云中选择与扫描相关的点，并针对激光雷达数据中的每次扫描分别转换到固定帧中，以产生最终的运动补偿扫描。",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        }
+      ],
+      "sig": "Due to the nature of spinning LiDAR measurements, it is crucial to compensate for the distortion caused by motion during continuous measurements. The motion distortion is 10866 IEEE ROBOTICS AND AUTOMATION LETTERS, VOL. 11, NO. 9, SEPTEMBER 2026 Fig. 3. Route maps with sample RGB and thermal images, taken from ﬁve locations: a–e. The two Otaniemi routes align with each other, and the ﬁrst two images were taken at the same location at different times. The color of each image frame matches its corresponding routes on the map. The thicker colored parts of the routes indicate the annotated frames. compensated by utilizing a post-processed GNSS/IMU trajectory derived from Novatel Inertial Explorer software and data from nearby GNSS base stations. First, the LiDAR trajectory, deﬁned as the pose of the LiDAR with respect to time, is exported in the global frame. Second, to georeference LiDAR measurements point-wise into the global frame, each range and intensity measurement (i.e., point) is individually transformed into the global frame by using a pose of the LiDAR at the time of each measurement. The continuous LiDAR data is split into scans, i.e., full 360◦ rotations of the spinning LiDAR. To compensate for motion, the LiDAR readings from each scan are reprojected into a ﬁxed frame. The frame’s pose is deﬁned according to the LiDAR’s pose at the time of the ﬁrst scan measurement. Finally, the points associated with a scan are selected from the georeferenced point cloud and transformed into the ﬁxed frame separately for each scan in the LiDAR data to produce ﬁnal motion-compensated scans.|由于旋转激光雷达测量的性质，补偿连续测量过程中运动引起的失真至关重要。运动失真为10866 IEEE ROBOTICS AND AUTOMATION LETTERS， VOL.11，NO.9，SEPTEMBER 2026图3。带有样本RGB和热图像的路线图，取自五个位置：a-e。两条Otaniemi路线相互对齐，前两张图像在不同时间在同一位置拍摄。每个图像帧的颜色与其在地图上的相应路线相匹配。 路线中较厚的彩色部分表示带注释的框架。通过使用来自Novatel Inerential Explorer软件的后处理GNSS/IMU轨迹和来自附近GNSS基站的数据进行补偿。首先，激光雷达轨迹，定义为激光雷达相对于时间的位姿，在全局帧中导出。其次，为了将激光雷达测量点到全局帧中，每个范围和强度测量（即点）通过在每次测量时使用激光雷达的位姿单独转换到全局帧中。连续的激光雷达数据被分成扫描，即旋转激光雷达的360度旋转。 为了补偿运动，每次扫描的激光雷达读数被重新投影到固定帧中。帧的姿态根据第一次扫描测量时激光雷达的姿态定义。最后，从地理参考点云中选择与扫描相关的点，并针对激光雷达数据中的每次扫描分别转换到固定帧中，以产生最终的运动补偿扫描。",
+      "file": "Snowy_Scenes_A_Multimodal_Multitask_Dataset_Toward_Snow-Tonomous_Vehicles.pdf",
+      "page": null
+    },
+    {
+      "ts": 1791378866754,
+      "via": "火山",
+      "pairs": [
+        {
+          "en": "LiDAR Motion Compensation",
+          "zh": "激光雷达运动补偿",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        }
+      ],
+      "sig": "LiDAR Motion Compensation|激光雷达运动补偿",
+      "file": "Snowy_Scenes_A_Multimodal_Multitask_Dataset_Toward_Snow-Tonomous_Vehicles.pdf",
+      "page": null
+    },
+    {
+      "ts": 1791378276736,
+      "via": "火山",
+      "pairs": [
+        {
+          "en": "A. Vehicle and Sensor Setup As depicted in Fig. 2, our vehicle (Ford Mondeo, 2017) is equipped with a 360-degree, high-resolution 128-beam LiDAR, a front-facing RGB camera, and three thermal cameras. Additionally, the vehicle has a GNSS/IMU system for accurate ego-positioning. Detailed speciﬁcations for each sensor can be found in Table II. All sensors are time-synchronized using a GNSS/IMU sensor and calibrated as detailed in Section III-B. Fig. 2. Sensor setup for the data logging vehicle. TABLE II SENSOR SPECIFICATIONS OF SNOWY SCENES B. Sensor Calibration and Synchronization The global frame is an East-North-Up (ENU) frame deﬁned according to the ETRS-TM35FIN coordinate system. It is a Universal Transverse Mercator projection (ETRS89 / UTM zone 35 N) that spans the entire country of Finland. The up coordinate is deﬁned as the ellipsoidal height. The vehicle ego-frame and the LiDAR frame are the same. Its x-axis is positive to the right, the y-axis is positive forward, and the z-axis is positive upwards. The camera frame is located in the camera focal point (x-axis positive right, y-axis down, and z-axis forward), deﬁned with a 4 × 4 camera extrinsic matrix that maps data from this sensor to the LiDAR frame. The camera intrinsic matrix for the pinhole model is also provided, along with the Brown-Conrady distortion parameters, which account for lens distortion. All thermal cameras also have similar coordinate frames and parameter matrices that transform their data into the LiDAR frame, which is used as the ego-frame. The time synchronization of sensors is performed using the pulse per second (PPS) signal and NMEA serial messages sent by the Novatel GNSS/IMU to other sensors, which lock their internal clocks to the main time source. RGB and thermal cameras are hardware-triggered by the same Novatel GNSS/IMU sensor at 10 Hz. LiDAR data is logged continuously during data collection, and its measurements are later motion compensated (See Section III-C). For each motioncompensated LiDAR scan, the closest-in-time RGB and thermal images are associated with it. The data-collection frame rate is 10 Hz.",
+          "zh": "A.车辆和传感器设置如图2所示，我们的车辆（福特蒙迪欧，2017年）配备了360度高分辨率128光束激光雷达、前置RGB摄像头和三个热像仪。此外，车辆还配备了GNSS/IMU系统，用于精确的自我意识定位。每个传感器的详细规格见表II。所有传感器都使用GNSS/IMU传感器进行时间同步，并按照第三节B中的详细说明进行校准。图2.数据记录车辆的传感器设置。表II雪景传感器规格B.传感器校准和同步全局框架是根据ETRS-TM35FIN坐标系定义的东北向上（ENU）框架。 它是一个横跨芬兰全国的通用横向墨卡托投影（ETRS89/UTM区域35 N）。向上坐标定义为椭球高度。车辆自我意识框架和激光雷达框架是相同的。它的x轴向右正，y轴向前正，z轴向上正。相机框架位于相机焦点（x轴向右正，y轴向下，z轴向前），由4×4相机外在矩阵定义，该矩阵将来自该传感器的数据映射到激光雷达框架。 还提供了针孔模型的相机内在矩阵，以及解释镜头畸变的布朗-康拉迪畸变参数。所有热像仪也有类似的坐标框架和参数矩阵，将其数据转换成激光雷达框架，激光雷达框架用作自我意识框架。传感器的时间同步是使用Novatel GNSS/IMU发送给其他传感器的每秒脉冲（PPS）信号和NMEA串行消息来执行的，这些传感器将其内部时钟锁定在主要时间源上。 RGB和热像仪由相同的Novatel GNSS/IMU传感器以10 Hz的频率硬件触发。LiDAR数据在数据采集过程中连续记录，其测量随后进行运动补偿（见第III-C节）。对于每次运动补偿LiDAR扫描，与之关联的是时间最近的RGB和热像仪。数据采集帧率为10 Hz。",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        }
+      ],
+      "sig": "A. Vehicle and Sensor Setup As depicted in Fig. 2, our vehicle (Ford Mondeo, 2017) is equipped with a 360-degree, high-resolution 128-beam LiDAR, a front-facing RGB camera, and three thermal cameras. Additionally, the vehicle has a GNSS/IMU system for accurate ego-positioning. Detailed speciﬁcations for each sensor can be found in Table II. All sensors are time-synchronized using a GNSS/IMU sensor and calibrated as detailed in Section III-B. Fig. 2. Sensor setup for the data logging vehicle. TABLE II SENSOR SPECIFICATIONS OF SNOWY SCENES B. Sensor Calibration and Synchronization The global frame is an East-North-Up (ENU) frame deﬁned according to the ETRS-TM35FIN coordinate system. It is a Universal Transverse Mercator projection (ETRS89 / UTM zone 35 N) that spans the entire country of Finland. The up coordinate is deﬁned as the ellipsoidal height. The vehicle ego-frame and the LiDAR frame are the same. Its x-axis is positive to the right, the y-axis is positive forward, and the z-axis is positive upwards. The camera frame is located in the camera focal point (x-axis positive right, y-axis down, and z-axis forward), deﬁned with a 4 × 4 camera extrinsic matrix that maps data from this sensor to the LiDAR frame. The camera intrinsic matrix for the pinhole model is also provided, along with the Brown-Conrady distortion parameters, which account for lens distortion. All thermal cameras also have similar coordinate frames and parameter matrices that transform their data into the LiDAR frame, which is used as the ego-frame. The time synchronization of sensors is performed using the pulse per second (PPS) signal and NMEA serial messages sent by the Novatel GNSS/IMU to other sensors, which lock their internal clocks to the main time source. RGB and thermal cameras are hardware-triggered by the same Novatel GNSS/IMU sensor at 10 Hz. LiDAR data is logged continuously during data collection, and its measurements are later motion compensated (See Section III-C). For each motioncompensated LiDAR scan, the closest-in-time RGB and thermal images are associated with it. The data-collection frame rate is 10 Hz.|A.车辆和传感器设置如图2所示，我们的车辆（福特蒙迪欧，2017年）配备了360度高分辨率128光束激光雷达、前置RGB摄像头和三个热像仪。此外，车辆还配备了GNSS/IMU系统，用于精确的自我意识定位。每个传感器的详细规格见表II。所有传感器都使用GNSS/IMU传感器进行时间同步，并按照第三节B中的详细说明进行校准。图2.数据记录车辆的传感器设置。表II雪景传感器规格B.传感器校准和同步全局框架是根据ETRS-TM35FIN坐标系定义的东北向上（ENU）框架。 它是一个横跨芬兰全国的通用横向墨卡托投影（ETRS89/UTM区域35 N）。向上坐标定义为椭球高度。车辆自我意识框架和激光雷达框架是相同的。它的x轴向右正，y轴向前正，z轴向上正。相机框架位于相机焦点（x轴向右正，y轴向下，z轴向前），由4×4相机外在矩阵定义，该矩阵将来自该传感器的数据映射到激光雷达框架。 还提供了针孔模型的相机内在矩阵，以及解释镜头畸变的布朗-康拉迪畸变参数。所有热像仪也有类似的坐标框架和参数矩阵，将其数据转换成激光雷达框架，激光雷达框架用作自我意识框架。传感器的时间同步是使用Novatel GNSS/IMU发送给其他传感器的每秒脉冲（PPS）信号和NMEA串行消息来执行的，这些传感器将其内部时钟锁定在主要时间源上。 RGB和热像仪由相同的Novatel GNSS/IMU传感器以10 Hz的频率硬件触发。LiDAR数据在数据采集过程中连续记录，其测量随后进行运动补偿（见第III-C节）。对于每次运动补偿LiDAR扫描，与之关联的是时间最近的RGB和热像仪。数据采集帧率为10 Hz。",
+      "file": "Snowy_Scenes_A_Multimodal_Multitask_Dataset_Toward_Snow-Tonomous_Vehicles.pdf",
+      "page": null
+    },
+    {
+      "ts": 1791378070275,
+      "via": "火山",
+      "pairs": [
+        {
+          "en": "Autonomous driving has undergone signiﬁcant advancements over the last decade [8], [9], [10], [11], [12], [13], [14], with notable benchmarks such as KITTI [8], nuScenes [10], and Waymo [11] providing large-scale multimodal datasets for urban driving scenarios. However, these datasets primarily capture clear weather conditions, limiting their applicability in winter weather. Table I provides an overview of the dataset landscape and compares our proposed Snowy Scenes with the existing body of work in the literature. In this table, we separated the datasets into two groups. The top half encompasses datasets that exclude snow, whereas the bottom half is composed of datasets that explicitly involve snow. It is, however, important to note that in some datasets in this bottom group, snow constitutes a negligible fraction of the whole set. For instance, snow covers only 2% of the entire dataset, i.e., about 2 K frames, in ZOD [4], and 12% (i.e., 800 frames) in Ithaca365 [5]. The snowy data rate goes up to 33.4% in SemanticSTF [3], corresponding to approximately 700 frames. Other datasets, including MSU-4S [2] and MAN TruckScenes [1], have more samples of snowy conditions, but they only provide 3D bounding boxes without semantic labels. In the case of Boreas [16], 3D bounding box annotations are obtained in sunny weather. Notably, CADC [6] and WADS [7] are the only datasets that focus exclusively on snowy winter conditions, making them the most similar to Snowy Scenes. CADC [6] is the ﬁrst to provide a fully snowy dataset for 3D object detection, while WADS [7] is the ﬁrst to provide 3D semantic segmentation as well as the labeling of individual snowﬂakes. Despite the substantial contributions of both datasets to the research on weather-resistant perception, they exhibit signiﬁcant shortcomings. CADC [6] suffers from 32-beam low-resolution point cloud data, and WADS [7] is a unimodal dataset. Furthermore, both datasets lack diversity in annotations. In contrast, as shown in Table I, our Snowy Scenes dataset has a diverse sensor suite, including 128-beam high-resolution LiDAR, RGB cameras, thermal imaging, and GNSS/IMU data. In contrast to all other datasets in Table I, Snowy Scenes takes a major leap forward with the most extensive set of annotations, including 3D object bounding boxes, per-point segmentation, and snowﬂake labeling across the entire 5 K point clouds. Note that a number of additional datasets are excluded from Table I, despite the presence of snowy conditions. This is because they either lack 3D annotations (e.g., MUSES [17]) or omit LiDAR as in BDD100K [18]. RADIATE [19] is also excluded because it provides only 2D bounding boxes on radar images without 3D annotations.",
+          "zh": "自动驾驶在过去十年中取得了显著进步[8]、[9]、[10]、[11]、[12]、[13]、[14]，KITTI[8]、nuScenes[10]和Waymo[11]等著名基准为城市驾驶场景提供了大规模多模态数据集。然而，这些数据集主要捕获晴朗的天气条件，限制了它们在冬季天气中的适用性。表I提供了数据集景观的概述，并将我们提出的雪景与文献中现有的工作进行了比较。在这张表中，我们将数据集分为两组。上半部分包含排除雪的数据集，而下半部分由明确涉及雪的数据集组成。 然而，重要的是要注意，在这个底部组的一些数据集中，雪构成了整个集合的微不足道的一部分。例如，在ZOD[4]中，雪只覆盖了整个数据集的2%，即大约2 K帧，在Ithaca365[5]中覆盖了12%（即800帧）。在SemanticSTF[3]中，下雪的数据速率上升到33.4%，对应于大约700帧。其他数据集，包括MSU-4S[2]和MAN TruckScenes[1]，有更多的下雪条件样本，但它们只提供没有语义标签的3D边界框。在Boreas[16]的情况下，3D边界框注释是在晴朗的天气中获得的。 值得注意的是，CADC[6]和WADS[7]是唯一专门关注下雪冬季条件的数据集，这使得它们与雪景最相似。CADC[6]是第一个为3D目标检测提供全雪数据集的数据集，而WADS[7]是第一个提供3D语义分割以及单个雪花标记的数据集。尽管这两个数据集对耐候性感知研究做出了重大贡献，但它们表现出明显的缺点。CADC[6]遭受32波束低分辨率点云数据，而WADS[7]是单峰数据集。此外，这两个数据集在注释方面缺乏多样性。 相比之下，如表I所示，我们的Snowy Scenes数据集具有多样化的传感器套件，包括128波束高分辨率LiDAR、RGB相机、热成像和GNSS/IMU数据。与表I中的所有其他数据集相比，Snowy Scenes通过最广泛的注释集取得了重大飞跃，包括3D对象边界框、每点分割和跨越整个5 K点云的雪花标记。请注意，尽管存在下雪条件，但表I中排除了许多其他数据集。这是因为它们要么缺乏3D注释（例如MUSES[17]），要么像BDD100K[18]那样省略LiDAR。 RADIATE[19]也被排除在外，因为它仅在雷达图像上提供2D边界框而没有3D注释。",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        }
+      ],
+      "sig": "Autonomous driving has undergone signiﬁcant advancements over the last decade [8], [9], [10], [11], [12], [13], [14], with notable benchmarks such as KITTI [8], nuScenes [10], and Waymo [11] providing large-scale multimodal datasets for urban driving scenarios. However, these datasets primarily capture clear weather conditions, limiting their applicability in winter weather. Table I provides an overview of the dataset landscape and compares our proposed Snowy Scenes with the existing body of work in the literature. In this table, we separated the datasets into two groups. The top half encompasses datasets that exclude snow, whereas the bottom half is composed of datasets that explicitly involve snow. It is, however, important to note that in some datasets in this bottom group, snow constitutes a negligible fraction of the whole set. For instance, snow covers only 2% of the entire dataset, i.e., about 2 K frames, in ZOD [4], and 12% (i.e., 800 frames) in Ithaca365 [5]. The snowy data rate goes up to 33.4% in SemanticSTF [3], corresponding to approximately 700 frames. Other datasets, including MSU-4S [2] and MAN TruckScenes [1], have more samples of snowy conditions, but they only provide 3D bounding boxes without semantic labels. In the case of Boreas [16], 3D bounding box annotations are obtained in sunny weather. Notably, CADC [6] and WADS [7] are the only datasets that focus exclusively on snowy winter conditions, making them the most similar to Snowy Scenes. CADC [6] is the ﬁrst to provide a fully snowy dataset for 3D object detection, while WADS [7] is the ﬁrst to provide 3D semantic segmentation as well as the labeling of individual snowﬂakes. Despite the substantial contributions of both datasets to the research on weather-resistant perception, they exhibit signiﬁcant shortcomings. CADC [6] suffers from 32-beam low-resolution point cloud data, and WADS [7] is a unimodal dataset. Furthermore, both datasets lack diversity in annotations. In contrast, as shown in Table I, our Snowy Scenes dataset has a diverse sensor suite, including 128-beam high-resolution LiDAR, RGB cameras, thermal imaging, and GNSS/IMU data. In contrast to all other datasets in Table I, Snowy Scenes takes a major leap forward with the most extensive set of annotations, including 3D object bounding boxes, per-point segmentation, and snowﬂake labeling across the entire 5 K point clouds. Note that a number of additional datasets are excluded from Table I, despite the presence of snowy conditions. This is because they either lack 3D annotations (e.g., MUSES [17]) or omit LiDAR as in BDD100K [18]. RADIATE [19] is also excluded because it provides only 2D bounding boxes on radar images without 3D annotations.|自动驾驶在过去十年中取得了显著进步[8]、[9]、[10]、[11]、[12]、[13]、[14]，KITTI[8]、nuScenes[10]和Waymo[11]等著名基准为城市驾驶场景提供了大规模多模态数据集。然而，这些数据集主要捕获晴朗的天气条件，限制了它们在冬季天气中的适用性。表I提供了数据集景观的概述，并将我们提出的雪景与文献中现有的工作进行了比较。在这张表中，我们将数据集分为两组。上半部分包含排除雪的数据集，而下半部分由明确涉及雪的数据集组成。 然而，重要的是要注意，在这个底部组的一些数据集中，雪构成了整个集合的微不足道的一部分。例如，在ZOD[4]中，雪只覆盖了整个数据集的2%，即大约2 K帧，在Ithaca365[5]中覆盖了12%（即800帧）。在SemanticSTF[3]中，下雪的数据速率上升到33.4%，对应于大约700帧。其他数据集，包括MSU-4S[2]和MAN TruckScenes[1]，有更多的下雪条件样本，但它们只提供没有语义标签的3D边界框。在Boreas[16]的情况下，3D边界框注释是在晴朗的天气中获得的。 值得注意的是，CADC[6]和WADS[7]是唯一专门关注下雪冬季条件的数据集，这使得它们与雪景最相似。CADC[6]是第一个为3D目标检测提供全雪数据集的数据集，而WADS[7]是第一个提供3D语义分割以及单个雪花标记的数据集。尽管这两个数据集对耐候性感知研究做出了重大贡献，但它们表现出明显的缺点。CADC[6]遭受32波束低分辨率点云数据，而WADS[7]是单峰数据集。此外，这两个数据集在注释方面缺乏多样性。 相比之下，如表I所示，我们的Snowy Scenes数据集具有多样化的传感器套件，包括128波束高分辨率LiDAR、RGB相机、热成像和GNSS/IMU数据。与表I中的所有其他数据集相比，Snowy Scenes通过最广泛的注释集取得了重大飞跃，包括3D对象边界框、每点分割和跨越整个5 K点云的雪花标记。请注意，尽管存在下雪条件，但表I中排除了许多其他数据集。这是因为它们要么缺乏3D注释（例如MUSES[17]），要么像BDD100K[18]那样省略LiDAR。 RADIATE[19]也被排除在外，因为它仅在雷达图像上提供2D边界框而没有3D注释。",
+      "file": "Snowy_Scenes_A_Multimodal_Multitask_Dataset_Toward_Snow-Tonomous_Vehicles.pdf",
+      "page": null
+    },
+    {
+      "ts": 1791378032376,
+      "via": "火山",
+      "pairs": [
+        {
+          "en": "We introduce a new multimodal dataset, named Snowy Scenes, with over 22 K data collected using a highresolution LiDAR coupled with RGB and thermal cameras in snowy winter conditions only. \u0002 We provide a comprehensive human annotation of over 5 K sequential LiDAR scans, containing 221 K precise bounding boxes for object detection, per-point semantic segmentation, and labeling of falling snow particles. 60% of annotated Snow Scenes scans has active snowfall. \u0002 Leveraging Snowy Scenes, we benchmark various stateof-the-art models for individual and joint learning of three key perception tasks: 3D object detection, 3D semantic segmentation, and 3D point cloud denoising. These benchmarking efforts provide comprehensive baselines to support future research on multimodal sensor fusion and multitask learning in snowy weather. To the best of our knowledge, Snowy Scenes is the ﬁrst dataset that allows for the learning of multiple 3D perception tasks in a multimodal setup, logged under snowy winter conditions. A devkit with evaluation code and conﬁguration ﬁles to reproduce the experiment ﬁndings will be made publicly available with the dataset upon publication",
+          "zh": "我们引入了一个新的多模态数据集，名为Snowy Scenes，其中包含22 K以上的数据，这些数据仅在下雪的冬季条件下使用高分辨率LiDAR与RGB和热像仪耦合收集。我们提供了超过5 K顺序LiDAR扫描的全面人类注释，包含221 K精确的边界框，用于目标检测、每点语义分割和降雪粒子的标记。60%的注释雪景扫描具有活动降雪。利用Snowy Scenes，我们对各种最先进的模型进行基准测试，用于单独和联合学习三个关键感知任务：3D目标检测、3D语义分割和3D点云去噪。 这些基准测试工作提供了全面的基线，以支持未来在下雪天气下多模态传感器融合和多任务学习的研究。据我们所知，雪景是第一个允许在多模态设置中学习多个3D感知任务的数据集，记录在下雪的冬季条件下。一个包含评估代码和配置文件的开发工具包将在发布后与数据集一起公开",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        }
+      ],
+      "sig": "We introduce a new multimodal dataset, named Snowy Scenes, with over 22 K data collected using a highresolution LiDAR coupled with RGB and thermal cameras in snowy winter conditions only. \u0002 We provide a comprehensive human annotation of over 5 K sequential LiDAR scans, containing 221 K precise bounding boxes for object detection, per-point semantic segmentation, and labeling of falling snow particles. 60% of annotated Snow Scenes scans has active snowfall. \u0002 Leveraging Snowy Scenes, we benchmark various stateof-the-art models for individual and joint learning of three key perception tasks: 3D object detection, 3D semantic segmentation, and 3D point cloud denoising. These benchmarking efforts provide comprehensive baselines to support future research on multimodal sensor fusion and multitask learning in snowy weather. To the best of our knowledge, Snowy Scenes is the ﬁrst dataset that allows for the learning of multiple 3D perception tasks in a multimodal setup, logged under snowy winter conditions. A devkit with evaluation code and conﬁguration ﬁles to reproduce the experiment ﬁndings will be made publicly available with the dataset upon publication|我们引入了一个新的多模态数据集，名为Snowy Scenes，其中包含22 K以上的数据，这些数据仅在下雪的冬季条件下使用高分辨率LiDAR与RGB和热像仪耦合收集。我们提供了超过5 K顺序LiDAR扫描的全面人类注释，包含221 K精确的边界框，用于目标检测、每点语义分割和降雪粒子的标记。60%的注释雪景扫描具有活动降雪。利用Snowy Scenes，我们对各种最先进的模型进行基准测试，用于单独和联合学习三个关键感知任务：3D目标检测、3D语义分割和3D点云去噪。 这些基准测试工作提供了全面的基线，以支持未来在下雪天气下多模态传感器融合和多任务学习的研究。据我们所知，雪景是第一个允许在多模态设置中学习多个3D感知任务的数据集，记录在下雪的冬季条件下。一个包含评估代码和配置文件的开发工具包将在发布后与数据集一起公开",
+      "file": "Snowy_Scenes_A_Multimodal_Multitask_Dataset_Toward_Snow-Tonomous_Vehicles.pdf",
+      "page": null
+    },
+    {
+      "ts": 1791378025869,
+      "via": "火山",
+      "pairs": [
+        {
+          "en": "We introduce a new multimodal dataset, named Snowy Scenes, with over 22 K data collected using a highresolution LiDAR coupled with RGB and thermal cameras in snowy winter conditions only. \u0002 We provide a comprehensive human annotation of over 5 K sequential LiDAR scans, containing 221 K precise bounding boxes for object detection, per-point semantic segmentation, and labeling of falling snow particles. 60% of annotated Snow Scenes scans has active snowfall. \u0002 Leveraging Snowy Scenes, we benchmark various stateof-the-art models for individual and joint learning of three key perception tasks: 3D object detection, 3D semantic segmentation, and 3D point cloud denoising. These benchmarking efforts provide comprehensive baselines to support future research on multimodal sensor fusion and multitask learning in snowy weather. To the best of our knowledge, Snowy Scenes is the ﬁrst dataset that allows for the learning of multiple 3D perception tasks in a multimodal setup, logged under snowy winter conditions. A devkit with evaluation code and conﬁguration ﬁles to reproduce the experiment ﬁndings will be made publicly available with the",
+          "zh": "我们引入了一个新的多模态数据集，名为Snowy Scenes，其中包含22 K以上的数据，这些数据仅在下雪的冬季条件下使用高分辨率LiDAR与RGB和热像仪耦合收集。我们提供了超过5 K顺序LiDAR扫描的全面人类注释，包含221 K精确的边界框，用于目标检测、每点语义分割和降雪粒子的标记。60%的注释雪景扫描具有活动降雪。利用Snowy Scenes，我们对各种最先进的模型进行基准测试，用于单独和联合学习三个关键感知任务：3D目标检测、3D语义分割和3D点云去噪。 这些基准测试工作提供了全面的基线，以支持未来在下雪天气下多模态传感器融合和多任务学习的研究。据我们所知，雪景是第一个允许在多模态设置中学习多个3D感知任务的数据集，记录在下雪的冬季条件下。一个包含评估代码和配置文件的开发工具包将与",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        }
+      ],
+      "sig": "We introduce a new multimodal dataset, named Snowy Scenes, with over 22 K data collected using a highresolution LiDAR coupled with RGB and thermal cameras in snowy winter conditions only. \u0002 We provide a comprehensive human annotation of over 5 K sequential LiDAR scans, containing 221 K precise bounding boxes for object detection, per-point semantic segmentation, and labeling of falling snow particles. 60% of annotated Snow Scenes scans has active snowfall. \u0002 Leveraging Snowy Scenes, we benchmark various stateof-the-art models for individual and joint learning of three key perception tasks: 3D object detection, 3D semantic segmentation, and 3D point cloud denoising. These benchmarking efforts provide comprehensive baselines to support future research on multimodal sensor fusion and multitask learning in snowy weather. To the best of our knowledge, Snowy Scenes is the ﬁrst dataset that allows for the learning of multiple 3D perception tasks in a multimodal setup, logged under snowy winter conditions. A devkit with evaluation code and conﬁguration ﬁles to reproduce the experiment ﬁndings will be made publicly available with the|我们引入了一个新的多模态数据集，名为Snowy Scenes，其中包含22 K以上的数据，这些数据仅在下雪的冬季条件下使用高分辨率LiDAR与RGB和热像仪耦合收集。我们提供了超过5 K顺序LiDAR扫描的全面人类注释，包含221 K精确的边界框，用于目标检测、每点语义分割和降雪粒子的标记。60%的注释雪景扫描具有活动降雪。利用Snowy Scenes，我们对各种最先进的模型进行基准测试，用于单独和联合学习三个关键感知任务：3D目标检测、3D语义分割和3D点云去噪。 这些基准测试工作提供了全面的基线，以支持未来在下雪天气下多模态传感器融合和多任务学习的研究。据我们所知，雪景是第一个允许在多模态设置中学习多个3D感知任务的数据集，记录在下雪的冬季条件下。一个包含评估代码和配置文件的开发工具包将与",
+      "file": "Snowy_Scenes_A_Multimodal_Multitask_Dataset_Toward_Snow-Tonomous_Vehicles.pdf",
+      "page": null
+    },
+    {
+      "ts": 1790335289089,
+      "via": "火山",
+      "pairs": [
+        {
+          "en": "As depicted in Fig. 2, our vehicle (Ford Mondeo, 2017) is equipped with a 360-degree, high-resolution 128-beam LiDAR, a front-facing RGB camera, and three thermal cameras. Additionally, the vehicle has a GNSS/IMU system for accurate ego-positioning. Detailed speciﬁcations for each sensor can be found in Table II. All sensors are time-synchronized using a GNSS/IMU sensor and calibrated as detailed in Section III-B.",
+          "zh": "如图2所示，我们的车辆（福特蒙迪欧，2017年）配备了360度高分辨率128光束激光雷达、前置RGB摄像头和三个热像仪。此外，车辆还配备了GNSS/IMU系统，用于精确的自我意识定位。每个传感器的详细规格可在表II中找到。所有传感器都使用GNSS/IMU传感器进行时间同步，并按照III-B部分的详细说明进行校准。",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        }
+      ],
+      "sig": "As depicted in Fig. 2, our vehicle (Ford Mondeo, 2017) is equipped with a 360-degree, high-resolution 128-beam LiDAR, a front-facing RGB camera, and three thermal cameras. Additionally, the vehicle has a GNSS/IMU system for accurate ego-positioning. Detailed speciﬁcations for each sensor can be found in Table II. All sensors are time-synchronized using a GNSS/IMU sensor and calibrated as detailed in Section III-B.|如图2所示，我们的车辆（福特蒙迪欧，2017年）配备了360度高分辨率128光束激光雷达、前置RGB摄像头和三个热像仪。此外，车辆还配备了GNSS/IMU系统，用于精确的自我意识定位。每个传感器的详细规格可在表II中找到。所有传感器都使用GNSS/IMU传感器进行时间同步，并按照III-B部分的详细说明进行校准。",
+      "file": "Snowy_Scenes_A_Multimodal_Multitask_Dataset_Toward_Snow-Tonomous_Vehicles.pdf",
+      "page": null
+    },
+    {
+      "ts": 1790335151024,
+      "via": "火山",
+      "pairs": [
+        {
+          "en": "Notably, CADC [6] and WADS [7] are the only datasets that focus exclusively on snowy winter conditions, making them the most similar to Snowy Scenes. CADC [6] is the ﬁrst to provide a fully snowy dataset for 3D object detection, while WADS [7] is the ﬁrst to provide 3D semantic segmentation as well as the labeling of individual snowﬂakes. Despite the substantial contributions of both datasets to the research on weather-resistant perception, they exhibit signiﬁcant shortcomings. CADC [6] suffers from 32-beam low-resolution point cloud data, and WADS [7] is a unimodal dataset. Furthermore, both datasets lack diversity in annotations. In contrast, as shown in Table I, our Snowy Scenes dataset has a diverse sensor suite, including 128-beam high-resolution LiDAR, RGB cameras, thermal imaging, and GNSS/IMU data. In contrast to all other datasets in Table I, Snowy Scenes takes a major leap forward with the most extensive set of annotations, including 3D object bounding boxes, per-point segmentation, and snowﬂake labeling across the entire 5 K point clouds. Note that a number of additional datasets are excluded from Table I, despite the presence of snowy conditions. This is because they either lack 3D annotations (e.g., MUSES [17]) or omit LiDAR as in BDD100K [18]. RADIATE [19] is also excluded because it provides only 2D bounding boxes on radar images without 3D annotations.",
+          "zh": "值得注意的是，CADC[6]和WADS[7]是唯一专门关注下雪冬季条件的数据集，这使得它们与雪景最相似。CADC[6]是第一个为3D目标检测提供全雪数据集的数据集，而WADS[7]是第一个提供3D语义分割以及单个雪花标记的数据集。尽管这两个数据集对耐候性感知研究做出了重大贡献，但它们表现出明显的缺点。CADC[6]遭受32波束低分辨率点云数据，而WADS[7]是单峰数据集。此外，这两个数据集在注释方面缺乏多样性。 相比之下，如表I所示，我们的Snowy Scenes数据集具有多样化的传感器套件，包括128波束高分辨率LiDAR、RGB相机、热成像和GNSS/IMU数据。与表I中的所有其他数据集相比，Snowy Scenes通过最广泛的注释集取得了重大飞跃，包括3D对象边界框、每点分割和跨越整个5 K点云的雪花标记。请注意，尽管存在下雪条件，但表I中排除了许多其他数据集。这是因为它们要么缺乏3D注释（例如MUSES[17]），要么像BDD100K[18]那样省略LiDAR。 RADIATE[19]也被排除在外，因为它仅在雷达图像上提供2D边界框而没有3D注释。",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        }
+      ],
+      "sig": "Notably, CADC [6] and WADS [7] are the only datasets that focus exclusively on snowy winter conditions, making them the most similar to Snowy Scenes. CADC [6] is the ﬁrst to provide a fully snowy dataset for 3D object detection, while WADS [7] is the ﬁrst to provide 3D semantic segmentation as well as the labeling of individual snowﬂakes. Despite the substantial contributions of both datasets to the research on weather-resistant perception, they exhibit signiﬁcant shortcomings. CADC [6] suffers from 32-beam low-resolution point cloud data, and WADS [7] is a unimodal dataset. Furthermore, both datasets lack diversity in annotations. In contrast, as shown in Table I, our Snowy Scenes dataset has a diverse sensor suite, including 128-beam high-resolution LiDAR, RGB cameras, thermal imaging, and GNSS/IMU data. In contrast to all other datasets in Table I, Snowy Scenes takes a major leap forward with the most extensive set of annotations, including 3D object bounding boxes, per-point segmentation, and snowﬂake labeling across the entire 5 K point clouds. Note that a number of additional datasets are excluded from Table I, despite the presence of snowy conditions. This is because they either lack 3D annotations (e.g., MUSES [17]) or omit LiDAR as in BDD100K [18]. RADIATE [19] is also excluded because it provides only 2D bounding boxes on radar images without 3D annotations.|值得注意的是，CADC[6]和WADS[7]是唯一专门关注下雪冬季条件的数据集，这使得它们与雪景最相似。CADC[6]是第一个为3D目标检测提供全雪数据集的数据集，而WADS[7]是第一个提供3D语义分割以及单个雪花标记的数据集。尽管这两个数据集对耐候性感知研究做出了重大贡献，但它们表现出明显的缺点。CADC[6]遭受32波束低分辨率点云数据，而WADS[7]是单峰数据集。此外，这两个数据集在注释方面缺乏多样性。 相比之下，如表I所示，我们的Snowy Scenes数据集具有多样化的传感器套件，包括128波束高分辨率LiDAR、RGB相机、热成像和GNSS/IMU数据。与表I中的所有其他数据集相比，Snowy Scenes通过最广泛的注释集取得了重大飞跃，包括3D对象边界框、每点分割和跨越整个5 K点云的雪花标记。请注意，尽管存在下雪条件，但表I中排除了许多其他数据集。这是因为它们要么缺乏3D注释（例如MUSES[17]），要么像BDD100K[18]那样省略LiDAR。 RADIATE[19]也被排除在外，因为它仅在雷达图像上提供2D边界框而没有3D注释。",
+      "file": "Snowy_Scenes_A_Multimodal_Multitask_Dataset_Toward_Snow-Tonomous_Vehicles.pdf",
+      "page": null
+    },
+    {
+      "ts": 1790335095731,
+      "via": "火山",
+      "pairs": [
+        {
+          "en": "Autonomous driving has undergone signiﬁcant advancements over the last decade [8], [9], [10], [11], [12], [13], [14], with notable benchmarks such as KITTI [8], nuScenes [10], and Waymo [11] providing large-scale multimodal datasets for urban driving scenarios. However, these datasets primarily capture clear weather conditions, limiting their applicability in winter weather. Table I provides an overview of the dataset landscape and compares our proposed Snowy Scenes with the existing body of work in the literature. In this table, we separated the datasets into two groups. The top half encompasses datasets that exclude snow, whereas the bottom half is composed of datasets that explicitly involve snow. It is, however, important to note that in some datasets in this bottom group, snow constitutes a negligible fraction of the whole set. For instance, snow covers only 2% of the entire dataset, i.e., about 2 K frames, in ZOD [4], and 12% (i.e., 800 frames) in Ithaca365 [5]. The snowy data rate goes up to 33.4% in SemanticSTF [3], corresponding to approximately 700 frames. Other datasets, including MSU-4S [2] and MAN TruckScenes [1], have more samples of snowy conditions, but they only provide 3D bounding boxes without semantic labels. In the case of Boreas [16], 3D bounding box annotations are obtained in sunny weather.",
+          "zh": "自动驾驶在过去十年中取得了显著进步[8]、[9]、[10]、[11]、[12]、[13]、[14]，KITTI[8]、nuScenes[10]和Waymo[11]等著名基准为城市驾驶场景提供了大规模多模态数据集。然而，这些数据集主要捕获晴朗的天气条件，限制了它们在冬季天气中的适用性。表I提供了数据集景观的概述，并将我们提出的雪景与文献中现有的工作进行了比较。在这张表中，我们将数据集分为两组。上半部分包含排除雪的数据集，而下半部分由明确涉及雪的数据集组成。 然而，重要的是要注意，在这个底部组的一些数据集中，雪构成了整个集合的微不足道的一部分。例如，在ZOD[4]中，雪只覆盖了整个数据集的2%，即大约2 K帧，在Ithaca365[5]中覆盖了12%（即800帧）。在SemanticSTF[3]中，下雪的数据速率上升到33.4%，对应于大约700帧。其他数据集，包括MSU-4S[2]和MAN TruckScenes[1]，有更多的下雪条件样本，但它们只提供没有语义标签的3D边界框。在Boreas[16]的情况下，3D边界框注释是在晴朗的天气中获得的。",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        }
+      ],
+      "sig": "Autonomous driving has undergone signiﬁcant advancements over the last decade [8], [9], [10], [11], [12], [13], [14], with notable benchmarks such as KITTI [8], nuScenes [10], and Waymo [11] providing large-scale multimodal datasets for urban driving scenarios. However, these datasets primarily capture clear weather conditions, limiting their applicability in winter weather. Table I provides an overview of the dataset landscape and compares our proposed Snowy Scenes with the existing body of work in the literature. In this table, we separated the datasets into two groups. The top half encompasses datasets that exclude snow, whereas the bottom half is composed of datasets that explicitly involve snow. It is, however, important to note that in some datasets in this bottom group, snow constitutes a negligible fraction of the whole set. For instance, snow covers only 2% of the entire dataset, i.e., about 2 K frames, in ZOD [4], and 12% (i.e., 800 frames) in Ithaca365 [5]. The snowy data rate goes up to 33.4% in SemanticSTF [3], corresponding to approximately 700 frames. Other datasets, including MSU-4S [2] and MAN TruckScenes [1], have more samples of snowy conditions, but they only provide 3D bounding boxes without semantic labels. In the case of Boreas [16], 3D bounding box annotations are obtained in sunny weather.|自动驾驶在过去十年中取得了显著进步[8]、[9]、[10]、[11]、[12]、[13]、[14]，KITTI[8]、nuScenes[10]和Waymo[11]等著名基准为城市驾驶场景提供了大规模多模态数据集。然而，这些数据集主要捕获晴朗的天气条件，限制了它们在冬季天气中的适用性。表I提供了数据集景观的概述，并将我们提出的雪景与文献中现有的工作进行了比较。在这张表中，我们将数据集分为两组。上半部分包含排除雪的数据集，而下半部分由明确涉及雪的数据集组成。 然而，重要的是要注意，在这个底部组的一些数据集中，雪构成了整个集合的微不足道的一部分。例如，在ZOD[4]中，雪只覆盖了整个数据集的2%，即大约2 K帧，在Ithaca365[5]中覆盖了12%（即800帧）。在SemanticSTF[3]中，下雪的数据速率上升到33.4%，对应于大约700帧。其他数据集，包括MSU-4S[2]和MAN TruckScenes[1]，有更多的下雪条件样本，但它们只提供没有语义标签的3D边界框。在Boreas[16]的情况下，3D边界框注释是在晴朗的天气中获得的。",
+      "file": "Snowy_Scenes_A_Multimodal_Multitask_Dataset_Toward_Snow-Tonomous_Vehicles.pdf",
+      "page": null
+    },
+    {
+      "ts": 1790334974071,
+      "via": "火山",
+      "pairs": [
+        {
+          "en": "We introduce a new multimodal dataset, named Snowy Scenes, with over 22 K data collected using a highresolution LiDAR coupled with RGB and thermal cameras in snowy winter conditions only. \u0002 We provide a comprehensive human annotation of over 5 K sequential LiDAR scans, containing 221 K precise bounding boxes for object detection, per-point semantic segmentation, and labeling of falling snow particles. 60% of annotated Snow Scenes scans has active snowfall. \u0002 Leveraging Snowy Scenes, we benchmark various stateof-the-art models for individual and joint learning of three key perception tasks: 3D object detection, 3D semantic segmentation, and 3D point cloud denoising. These benchmarking efforts provide comprehensive baselines to support future research on multimodal sensor fusion and multitask learning in snowy weather. To the best of our knowledge, Snowy Scenes is the ﬁrst dataset that allows for the learning of multiple 3D perception tasks in a multimodal setup, logged under snowy winter conditions. A devkit with evaluation code and conﬁguration ﬁles to reproduce the experiment ﬁndings will be made publicly available with the dataset upon publication.",
+          "zh": "我们引入了一个新的多模态数据集，名为Snowy Scenes，其中包含22 K以上的数据，这些数据仅在下雪的冬季条件下使用高分辨率LiDAR与RGB和热像仪耦合收集。我们提供了超过5 K顺序LiDAR扫描的全面人类注释，包含221 K精确的边界框，用于目标检测、每点语义分割和降雪粒子的标记。60%的注释雪景扫描具有活动降雪。利用Snowy Scenes，我们对各种最先进的模型进行基准测试，用于单独和联合学习三个关键感知任务：3D目标检测、3D语义分割和3D点云去噪。 这些基准测试工作提供了全面的基线，以支持未来在下雪天气下多模态传感器融合和多任务学习的研究。据我们所知，雪景是第一个允许在多模态设置中学习多个3D感知任务的数据集，记录在下雪的冬季条件下。一个包含评估代码和配置文件的开发工具包将在发布后与数据集一起公开。",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        }
+      ],
+      "sig": "We introduce a new multimodal dataset, named Snowy Scenes, with over 22 K data collected using a highresolution LiDAR coupled with RGB and thermal cameras in snowy winter conditions only. \u0002 We provide a comprehensive human annotation of over 5 K sequential LiDAR scans, containing 221 K precise bounding boxes for object detection, per-point semantic segmentation, and labeling of falling snow particles. 60% of annotated Snow Scenes scans has active snowfall. \u0002 Leveraging Snowy Scenes, we benchmark various stateof-the-art models for individual and joint learning of three key perception tasks: 3D object detection, 3D semantic segmentation, and 3D point cloud denoising. These benchmarking efforts provide comprehensive baselines to support future research on multimodal sensor fusion and multitask learning in snowy weather. To the best of our knowledge, Snowy Scenes is the ﬁrst dataset that allows for the learning of multiple 3D perception tasks in a multimodal setup, logged under snowy winter conditions. A devkit with evaluation code and conﬁguration ﬁles to reproduce the experiment ﬁndings will be made publicly available with the dataset upon publication.|我们引入了一个新的多模态数据集，名为Snowy Scenes，其中包含22 K以上的数据，这些数据仅在下雪的冬季条件下使用高分辨率LiDAR与RGB和热像仪耦合收集。我们提供了超过5 K顺序LiDAR扫描的全面人类注释，包含221 K精确的边界框，用于目标检测、每点语义分割和降雪粒子的标记。60%的注释雪景扫描具有活动降雪。利用Snowy Scenes，我们对各种最先进的模型进行基准测试，用于单独和联合学习三个关键感知任务：3D目标检测、3D语义分割和3D点云去噪。 这些基准测试工作提供了全面的基线，以支持未来在下雪天气下多模态传感器融合和多任务学习的研究。据我们所知，雪景是第一个允许在多模态设置中学习多个3D感知任务的数据集，记录在下雪的冬季条件下。一个包含评估代码和配置文件的开发工具包将在发布后与数据集一起公开。",
+      "file": "Snowy_Scenes_A_Multimodal_Multitask_Dataset_Toward_Snow-Tonomous_Vehicles.pdf",
+      "page": null
+    },
+    {
+      "ts": 1790334637258,
+      "via": "火山",
+      "pairs": [
+        {
+          "en": "10864 IEEE ROBOTICS AND AUTOMATION LETTERS, VOL. 11, NO. 9, SEPTEMBER 2026 TABLE I C OMPARISON OF SNOWY SCENES AGAINST EXISTING OUTDOOR PUBLIC DATASETS W ITH 3D ANNOTATIONS. BB, SL, AND SF R EFER TO 3D ANNOTATIONS FOR B OUNDING B OXES , SEMANTIC LABELS , AND SNOW FLAKES, R ESPECTIVELY. - R EPRESENTS UNSUPPORTED OR NO STATISTICS",
+          "zh": "10864 IEEE机器人和自动化信件，卷。11， no.9,2026年9月表I C对现有户外公共数据的雪景管理，带有3D注释。BB、SL和SF R尤其是B OUNDING B OXES、语义标签和雪花薄片的3D注释。-R表示不支持或没有统计数据",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        }
+      ],
+      "sig": "10864 IEEE ROBOTICS AND AUTOMATION LETTERS, VOL. 11, NO. 9, SEPTEMBER 2026 TABLE I C OMPARISON OF SNOWY SCENES AGAINST EXISTING OUTDOOR PUBLIC DATASETS W ITH 3D ANNOTATIONS. BB, SL, AND SF R EFER TO 3D ANNOTATIONS FOR B OUNDING B OXES , SEMANTIC LABELS , AND SNOW FLAKES, R ESPECTIVELY. - R EPRESENTS UNSUPPORTED OR NO STATISTICS|10864 IEEE机器人和自动化信件，卷。11， no.9,2026年9月表I C对现有户外公共数据的雪景管理，带有3D注释。BB、SL和SF R尤其是B OUNDING B OXES、语义标签和雪花薄片的3D注释。-R表示不支持或没有统计数据",
+      "file": "Snowy_Scenes_A_Multimodal_Multitask_Dataset_Toward_Snow-Tonomous_Vehicles.pdf",
+      "page": null
+    },
+    {
+      "ts": 1790334616921,
+      "via": "火山",
+      "pairs": [
+        {
+          "en": "C OMPARISON OF SNOWY SCENES AGAINST EXISTING OUTDOOR PUBLIC DATASETS W ITH 3D ANNOTATIONS.",
+          "zh": "C禁止使用3D注释对现有的户外公共数据进行雪景处理。",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        },
+        {
+          "en": "BB, SL, AND SF R EFER TO 3D ANNOTATIONS FOR B OUNDING B OXES , SEMANTIC LABELS , AND SNOW FLAKES, R ESPECTIVELY. - R EPRESENTS UNSUPPORTED OR NO STATISTICS",
+          "zh": "BB、SL和SF R尤其适用于B OUNDING B OXES、语义标签和Snow FLAKES的3D注释。-R表示不支持或没有统计信息",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        }
+      ],
+      "sig": "C OMPARISON OF SNOWY SCENES AGAINST EXISTING OUTDOOR PUBLIC DATASETS W ITH 3D ANNOTATIONS.|C禁止使用3D注释对现有的户外公共数据进行雪景处理。|BB, SL, AND SF R EFER TO 3D ANNOTATIONS FOR B OUNDING B OXES , SEMANTIC LABELS , AND SNOW FLAKES, R ESPECTIVELY. - R EPRESENTS UNSUPPORTED OR NO STATISTICS|BB、SL和SF R尤其适用于B OUNDING B OXES、语义标签和Snow FLAKES的3D注释。-R表示不支持或没有统计信息",
+      "file": "Snowy_Scenes_A_Multimodal_Multitask_Dataset_Toward_Snow-Tonomous_Vehicles.pdf",
+      "page": null
+    },
+    {
+      "ts": 1790334241045,
+      "via": "火山",
+      "pairs": [
+        {
+          "en": "The dataset includes high-quality multimodal sensor readings captured by one 128-beam LiDAR, one 2.3 MP RGB camera, and three 0.3 MP thermal cameras, providing a benchmark for diverse perception models in snowy environments. Different from existing datasets, as illustrated in Fig. 1, Snowy Scenes provides not only ground truth 3D bounding boxes but also pointwise annotations of 27 semantic categories, including falling snowﬂakes, which is crucial to study the detection and removal of snow particles, a.k.a., point cloud denoising or desnowing.",
+          "zh": "该数据集包括由一台128光束激光雷达、一台2.3 MP RGB相机和三台0.3 MP热像仪捕获的高质量多模态传感器读数，为雪地环境中的各种感知模型提供了基准。与现有数据集不同，如图1所示，Snowy Scenes不仅提供了地面实况3D边界框，还提供了27个语义类别的逐点注释，包括飘落的雪花，这对于研究雪颗粒的检测和去除至关重要，也就是点云去噪或去噪。",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        }
+      ],
+      "sig": "The dataset includes high-quality multimodal sensor readings captured by one 128-beam LiDAR, one 2.3 MP RGB camera, and three 0.3 MP thermal cameras, providing a benchmark for diverse perception models in snowy environments. Different from existing datasets, as illustrated in Fig. 1, Snowy Scenes provides not only ground truth 3D bounding boxes but also pointwise annotations of 27 semantic categories, including falling snowﬂakes, which is crucial to study the detection and removal of snow particles, a.k.a., point cloud denoising or desnowing.|该数据集包括由一台128光束激光雷达、一台2.3 MP RGB相机和三台0.3 MP热像仪捕获的高质量多模态传感器读数，为雪地环境中的各种感知模型提供了基准。与现有数据集不同，如图1所示，Snowy Scenes不仅提供了地面实况3D边界框，还提供了27个语义类别的逐点注释，包括飘落的雪花，这对于研究雪颗粒的检测和去除至关重要，也就是点云去噪或去噪。",
+      "file": "Snowy_Scenes_A_Multimodal_Multitask_Dataset_Toward_Snow-Tonomous_Vehicles.pdf",
+      "page": null
+    },
+    {
+      "ts": 1790334075652,
+      "via": "火山",
+      "pairs": [
+        {
+          "en": "Although there exists a substantial corpus of research [1], [2], [3], [4], [5], [6], [7] introducing various datasets featuring all-weather conditions (see Table I), these studies exhibit several deﬁciencies in multiple aspects. First, most of these datasets have a limited amount of annotated data dedicated to harsh weather conditions. For instance, snow covers only 2% of the entire ZOD [4] dataset and 12% of Ithaca365 [5]. Second, while certain datasets focus only on winter conditions, they evaluate only a single perception task, such as 3D object detection, as in the case of the CADC dataset [6], or 3D semantic segmentation, as in SemanticSTF [3]. Third, none of these datasets provides ground truth annotations to benchmark diverse multimodal 3D perception tasks in winter conditions. To address these limitations, we introduce Snowy Scenes, a multimodal autonomous driving dataset speciﬁcally designed to address multiple perception challenges posed by snowy winter conditions. Captured in the Otaniemi district of Espoo, Finland, during winter, the dataset comprises real-world urban driving scenarios featuring falling snowﬂakes, accumulated snow, and occluded road markings under both daytime and late-evening conditions.",
+          "zh": "尽管存在大量的研究语料库[1]、[2]、[3]、[4]、[5]、[6]、[7]引入了以全天候条件为特征的各种数据集（见表I），但这些研究在多个方面表现出几个定义。首先，这些数据集中的大多数都有有限数量的注释数据专用于恶劣的天气条件。例如，雪仅覆盖整个ZOD[4]数据集的2%和Ithaca365[5]的12%。其次，虽然某些数据集只关注冬季条件，但它们只评估单个感知任务，例如3D检测目标，如CADC数据集[6]的情况，或3D语义分割，如SemanticSTF[3]。 第三，这些数据集都没有提供地面实况注释来对冬季条件下的各种多模态3D感知任务进行基准测试。为了解决这些限制，我们引入了Snowy Scenes，这是一个多模态自动驾驶数据集，专门设计用于解决冬季下雪条件带来的多重感知挑战。该数据集在冬季拍摄于芬兰埃斯波的Otaniemi区，包括真实世界的城市驾驶场景，包括白天和深夜条件下的降雪、积雪和闭塞的道路标记。",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        }
+      ],
+      "sig": "Although there exists a substantial corpus of research [1], [2], [3], [4], [5], [6], [7] introducing various datasets featuring all-weather conditions (see Table I), these studies exhibit several deﬁciencies in multiple aspects. First, most of these datasets have a limited amount of annotated data dedicated to harsh weather conditions. For instance, snow covers only 2% of the entire ZOD [4] dataset and 12% of Ithaca365 [5]. Second, while certain datasets focus only on winter conditions, they evaluate only a single perception task, such as 3D object detection, as in the case of the CADC dataset [6], or 3D semantic segmentation, as in SemanticSTF [3]. Third, none of these datasets provides ground truth annotations to benchmark diverse multimodal 3D perception tasks in winter conditions. To address these limitations, we introduce Snowy Scenes, a multimodal autonomous driving dataset speciﬁcally designed to address multiple perception challenges posed by snowy winter conditions. Captured in the Otaniemi district of Espoo, Finland, during winter, the dataset comprises real-world urban driving scenarios featuring falling snowﬂakes, accumulated snow, and occluded road markings under both daytime and late-evening conditions.|尽管存在大量的研究语料库[1]、[2]、[3]、[4]、[5]、[6]、[7]引入了以全天候条件为特征的各种数据集（见表I），但这些研究在多个方面表现出几个定义。首先，这些数据集中的大多数都有有限数量的注释数据专用于恶劣的天气条件。例如，雪仅覆盖整个ZOD[4]数据集的2%和Ithaca365[5]的12%。其次，虽然某些数据集只关注冬季条件，但它们只评估单个感知任务，例如3D检测目标，如CADC数据集[6]的情况，或3D语义分割，如SemanticSTF[3]。 第三，这些数据集都没有提供地面实况注释来对冬季条件下的各种多模态3D感知任务进行基准测试。为了解决这些限制，我们引入了Snowy Scenes，这是一个多模态自动驾驶数据集，专门设计用于解决冬季下雪条件带来的多重感知挑战。该数据集在冬季拍摄于芬兰埃斯波的Otaniemi区，包括真实世界的城市驾驶场景，包括白天和深夜条件下的降雪、积雪和闭塞的道路标记。",
+      "file": "Snowy_Scenes_A_Multimodal_Multitask_Dataset_Toward_Snow-Tonomous_Vehicles.pdf",
+      "page": null
+    },
+    {
+      "ts": 1790333963913,
+      "via": "火山",
+      "pairs": [
+        {
+          "en": "Although there exists a substantial corpus of research [1], [2], [3], [4], [5], [6], [7] introducing various datasets featuring all-weather conditions (see Table I), these studies exhibit several deﬁciencies in multiple aspects.",
+          "zh": "尽管存在大量的研究语料库[1]、[2]、[3]、[4]、[5]、[6]、[7]引入了具有全天候条件的各种数据集（见表I），但这些研究在多个方面表现出若干定义。",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        },
+        {
+          "en": "First, most of these datasets have a limited amount of annotated data dedicated to harsh weather conditions.",
+          "zh": "首先，这些数据集中的大多数都有有限数量的专门用于恶劣天气条件的注释数据。",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        },
+        {
+          "en": "For instance, snow covers only 2% of the entire ZOD [4] dataset and 12% of Ithaca365 [5].",
+          "zh": "例如，雪仅覆盖整个ZOD[4]数据集的2%和Ithaca365[5]的12%。",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        },
+        {
+          "en": "Second, while certain datasets focus only on winter conditions, they evaluate only a single perception task, such as 3D object detection, as in the case of the CADC dataset [6], or 3D semantic segmentation, as in SemanticSTF [3].",
+          "zh": "其次，虽然某些数据集只关注冬季条件，但它们只评估单个感知任务，例如3D目标检测，如CADC数据集[6]，或3D语义分割，如SemanticSTF[3]。",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        },
+        {
+          "en": "Third, none of these datasets provides ground truth annotations to benchmark diverse multimodal 3D perception tasks in winter conditions.",
+          "zh": "第三，这些数据集都没有提供地面实况注释来基准冬季条件下的各种多模态3D感知任务。",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        },
+        {
+          "en": "To address these limitations, we introduce Snowy Scenes, a multimodal autonomous driving dataset speciﬁcally designed to address multiple perception challenges posed by snowy winter conditions.",
+          "zh": "为了解决这些限制，我们引入了Snowy Scenes，这是一个多模态自动驾驶数据集，专门设计用于解决冬季下雪条件带来的多重感知挑战。",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        },
+        {
+          "en": "Captured in the Otaniemi district of Espoo, Finland, during winter, the dataset comprises real-world urban driving scenarios featuring falling snowﬂakes, accumulated snow, and occluded road markings under both daytime and late-evening conditions.",
+          "zh": "该数据集在冬季拍摄于芬兰埃斯波的Otaniemi区，包含真实世界的城市驾驶场景，包括白天和深夜条件下的降雪、积雪和被遮挡的道路标记。",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        }
+      ],
+      "sig": "Although there exists a substantial corpus of research [1], [2], [3], [4], [5], [6], [7] introducing various datasets featuring all-weather conditions (see Table I), these studies exhibit several deﬁciencies in multiple aspects.|尽管存在大量的研究语料库[1]、[2]、[3]、[4]、[5]、[6]、[7]引入了具有全天候条件的各种数据集（见表I），但这些研究在多个方面表现出若干定义。|First, most of these datasets have a limited amount of annotated data dedicated to harsh weather conditions.|首先，这些数据集中的大多数都有有限数量的专门用于恶劣天气条件的注释数据。|For instance, snow covers only 2% of the entire ZOD [4] dataset and 12% of Ithaca365 [5].|例如，雪仅覆盖整个ZOD[4]数据集的2%和Ithaca365[5]的12%。|Second, while certain datasets focus only on winter conditions, they evaluate only a single perception task, such as 3D object detection, as in the case of the CADC dataset [6], or 3D semantic segmentation, as in SemanticSTF [3].|其次，虽然某些数据集只关注冬季条件，但它们只评估单个感知任务，例如3D目标检测，如CADC数据集[6]，或3D语义分割，如SemanticSTF[3]。|Third, none of these datasets provides ground truth annotations to benchmark diverse multimodal 3D perception tasks in winter conditions.|第三，这些数据集都没有提供地面实况注释来基准冬季条件下的各种多模态3D感知任务。|To address these limitations, we introduce Snowy Scenes, a multimodal autonomous driving dataset speciﬁcally designed to address multiple perception challenges posed by snowy winter conditions.|为了解决这些限制，我们引入了Snowy Scenes，这是一个多模态自动驾驶数据集，专门设计用于解决冬季下雪条件带来的多重感知挑战。|Captured in the Otaniemi district of Espoo, Finland, during winter, the dataset comprises real-world urban driving scenarios featuring falling snowﬂakes, accumulated snow, and occluded road markings under both daytime and late-evening conditions.|该数据集在冬季拍摄于芬兰埃斯波的Otaniemi区，包含真实世界的城市驾驶场景，包括白天和深夜条件下的降雪、积雪和被遮挡的道路标记。",
+      "file": "Snowy_Scenes_A_Multimodal_Multitask_Dataset_Toward_Snow-Tonomous_Vehicles.pdf",
+      "page": null
+    },
+    {
+      "ts": 1790333933807,
+      "via": "火山",
+      "pairs": [
+        {
+          "en": "of state-of-the-art perception algorithms.",
+          "zh": "最先进的感知算法。",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        },
+        {
+          "en": "Despite the clear need, the implementation of weather-resistant perception models remains largely unexplored due to a lack of relevant benchmark datasets.",
+          "zh": "尽管有明确的需求，但由于缺乏相关的基准数据集，抗天气感知模型的实施在很大程度上仍未得到探索。",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        }
+      ],
+      "sig": "of state-of-the-art perception algorithms.|最先进的感知算法。|Despite the clear need, the implementation of weather-resistant perception models remains largely unexplored due to a lack of relevant benchmark datasets.|尽管有明确的需求，但由于缺乏相关的基准数据集，抗天气感知模型的实施在很大程度上仍未得到探索。",
+      "file": "Snowy_Scenes_A_Multimodal_Multitask_Dataset_Toward_Snow-Tonomous_Vehicles.pdf",
+      "page": null
+    },
+    {
+      "ts": 1790333891517,
+      "via": "火山",
+      "pairs": [
+        {
+          "en": "Received 5 March 2026; accepted 6 July 2026.",
+          "zh": "2026年3月5日收到；2026年7月6日接受。",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        },
+        {
+          "en": "Date of publication 27 July 2026; date of current version 10 August 2026.",
+          "zh": "出版日期2026年7月27日；当前版本的日期2026年8月10日。",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        },
+        {
+          "en": "This article was recommended for publication by Associate Editor D.",
+          "zh": "这篇文章被副主编D推荐出版。",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        },
+        {
+          "en": "De Martini and Editor A.",
+          "zh": "De Martini和编辑A.",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        },
+        {
+          "en": "Valada upon evaluation of the reviewers’ comments.",
+          "zh": "Valada在评估审稿人的意见后。",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        },
+        {
+          "en": "This work was supported in part by European Union and in by Project under Grant 101069576.",
+          "zh": "这项工作部分得到欧盟和101069576赠款项目的支持。",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        },
+        {
+          "en": "(Corresponding author: Thien-Thu Ngo.)",
+          "zh": "通讯作者： Thien-Thu Ngo.）",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        },
+        {
+          "en": "Thien-Thu Ngo, Abu Mohammed Raisuddin, Idriss Gouigah, and Lars Pernickel are with the School of Information Technology, Halmstad University, SE-301 18 Halmstad, Sweden (e-mail: ms.thienthu.ngo@gmail.com).",
+          "zh": "Thien-Thu Ngo、Abu Mohammed Raisuddin、Idriss Gouigah和Lars PerNi就职于瑞典哈尔姆斯塔德东南301 18号哈尔姆斯塔德大学信息技术学院（电子邮件：ms.thienthu.ngo@gmail.com）。",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        },
+        {
+          "en": "Paula Litkey, Petri Manninen, Heikki Hyyti, and Jyri Maanpää are with the Department of Remote Sensing and Photogrammetry, Finnish Geospatial Research Institute (FGI), National Land Survey of Finland, 00521 Helsinki, Finland.",
+          "zh": "Paula Litkey、Petri Manninen、Heikki Hyyti和Jyri Maanpää来自芬兰地理空间研究所（FGI）遥感和摄影测量部，芬兰国家土地调查局，00521赫尔辛基，芬兰。",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        },
+        {
+          "en": "Herranen Tuomas, Väisänen Soﬁe, and Niemi Kalle are with the Lapland University of Applied Sciences, 96300 Rovaniemi, Finland.",
+          "zh": "Herranen Tuomas、Väisänen Sofie和Niemi Kalle就职于芬兰罗瓦涅米96300拉普兰应用科学大学。",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        }
+      ],
+      "sig": "Received 5 March 2026; accepted 6 July 2026.|2026年3月5日收到；2026年7月6日接受。|Date of publication 27 July 2026; date of current version 10 August 2026.|出版日期2026年7月27日；当前版本的日期2026年8月10日。|This article was recommended for publication by Associate Editor D.|这篇文章被副主编D推荐出版。|De Martini and Editor A.|De Martini和编辑A.|Valada upon evaluation of the reviewers’ comments.|Valada在评估审稿人的意见后。|This work was supported in part by European Union and in by Project under Grant 101069576.|这项工作部分得到欧盟和101069576赠款项目的支持。|(Corresponding author: Thien-Thu Ngo.)|通讯作者： Thien-Thu Ngo.）|Thien-Thu Ngo, Abu Mohammed Raisuddin, Idriss Gouigah, and Lars Pernickel are with the School of Information Technology, Halmstad University, SE-301 18 Halmstad, Sweden (e-mail: ms.thienthu.ngo@gmail.com).|Thien-Thu Ngo、Abu Mohammed Raisuddin、Idriss Gouigah和Lars PerNi就职于瑞典哈尔姆斯塔德东南301 18号哈尔姆斯塔德大学信息技术学院（电子邮件：ms.thienthu.ngo@gmail.com）。|Paula Litkey, Petri Manninen, Heikki Hyyti, and Jyri Maanpää are with the Department of Remote Sensing and Photogrammetry, Finnish Geospatial Research Institute (FGI), National Land Survey of Finland, 00521 Helsinki, Finland.|Paula Litkey、Petri Manninen、Heikki Hyyti和Jyri Maanpää来自芬兰地理空间研究所（FGI）遥感和摄影测量部，芬兰国家土地调查局，00521赫尔辛基，芬兰。|Herranen Tuomas, Väisänen Soﬁe, and Niemi Kalle are with the Lapland University of Applied Sciences, 96300 Rovaniemi, Finland.|Herranen Tuomas、Väisänen Sofie和Niemi Kalle就职于芬兰罗瓦涅米96300拉普兰应用科学大学。",
+      "file": "Snowy_Scenes_A_Multimodal_Multitask_Dataset_Toward_Snow-Tonomous_Vehicles.pdf",
+      "page": null
+    },
+    {
+      "ts": 1790333813062,
+      "via": "火山",
+      "pairs": [
+        {
+          "en": "AUTONOMOUS driving systems have made remarkable progress in recent years.",
+          "zh": "自主驾驶系统近年来取得了显著进展。",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        },
+        {
+          "en": "However, their performance in adverse weather conditions remains a critical challenge.",
+          "zh": "然而，它们在恶劣天气条件下的表现仍然是一个严峻的挑战。",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        },
+        {
+          "en": "This limitation stems from a fundamental challenge: adverse winter conditions inherently degrade sensor quality.",
+          "zh": "这种限制源于一个根本挑战：不利的冬季条件本质上会降低传感器质量。",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        },
+        {
+          "en": "The relative lack of datasets captured under such conditions is an additional critical factor, constraining the capacity of perception models to mitigate this degradation in real-world winter conditions.",
+          "zh": "在这种情况下捕获的数据集相对缺乏是另一个关键因素，限制了感知模型在现实世界冬季条件下缓解这种退化的能力。",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        },
+        {
+          "en": "For instance, harsh weather, particularly snowfall, introduces unique challenges such as sensor occlusions, noisy readings, and reduced visibility, which can severely degrade the performance",
+          "zh": "例如，恶劣的天气，尤其是降雪，会带来独特的挑战，例如传感器遮挡、嘈杂的读数和能见度降低，这可能会严重降低性能",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        }
+      ],
+      "sig": "AUTONOMOUS driving systems have made remarkable progress in recent years.|自主驾驶系统近年来取得了显著进展。|However, their performance in adverse weather conditions remains a critical challenge.|然而，它们在恶劣天气条件下的表现仍然是一个严峻的挑战。|This limitation stems from a fundamental challenge: adverse winter conditions inherently degrade sensor quality.|这种限制源于一个根本挑战：不利的冬季条件本质上会降低传感器质量。|The relative lack of datasets captured under such conditions is an additional critical factor, constraining the capacity of perception models to mitigate this degradation in real-world winter conditions.|在这种情况下捕获的数据集相对缺乏是另一个关键因素，限制了感知模型在现实世界冬季条件下缓解这种退化的能力。|For instance, harsh weather, particularly snowfall, introduces unique challenges such as sensor occlusions, noisy readings, and reduced visibility, which can severely degrade the performance|例如，恶劣的天气，尤其是降雪，会带来独特的挑战，例如传感器遮挡、嘈杂的读数和能见度降低，这可能会严重降低性能",
+      "file": "Snowy_Scenes_A_Multimodal_Multitask_Dataset_Toward_Snow-Tonomous_Vehicles.pdf",
+      "page": null
+    },
+    {
+      "ts": 1790333687535,
+      "via": "火山",
+      "pairs": [
+        {
+          "en": "Abstract—Robust perception in snowy conditions remains a critical challenge for autonomous vehicles. To drive progress in this area, we introduce Snowy Scenes, the ﬁrst multimodal multitask dataset captured entirely in real-world snowy conditions, combining high-resolution 128-beam LiDAR data with synchronized RGB and thermal images. Snowy Scenes includes over 5 K expertly annotated LiDAR scans with 3D bounding boxes, per-point semantic labels, and snow particle annotations. This rich annotation set enables research on 3D object detection, semantic segmentation, and point cloud denoising, both as standalone tasks and within joint multitask learning frameworks. By benchmarking existing methods, our dataset paves the way for the next generation of perception models designed to handle the complexities of snowy winter weather. Index Terms—Autonomous systems, data collection, sensor fusion, object detection, semantic segmentation, signal denoising.",
+          "zh": "摘要——雪地条件下的鲁棒感知仍然是自动驾驶汽车面临的关键挑战。为了推动这一领域的进展，我们引入了雪地场景，这是第一个完全在现实世界雪地条件下捕获的多模态多任务数据集，将高分辨率128波束激光雷达数据与同步RGB和热图像相结合。雪地场景包括超过5 K专业注释的激光雷达扫描，带有3D边界框、每点语义标签和雪粒子注释。这个丰富的注释集支持3D目标检测、语义分割和点云去噪的研究，既可以作为独立任务，也可以作为联合多任务学习框架。通过对现有方法进行基准测试，我们的数据集为旨在处理冬季下雪天气复杂性的下一代感知模型铺平了道路。 索引术语-自主系统，数据采集，传感器融合，目标检测，语义分割，信号去噪。",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        }
+      ],
+      "sig": "Abstract—Robust perception in snowy conditions remains a critical challenge for autonomous vehicles. To drive progress in this area, we introduce Snowy Scenes, the ﬁrst multimodal multitask dataset captured entirely in real-world snowy conditions, combining high-resolution 128-beam LiDAR data with synchronized RGB and thermal images. Snowy Scenes includes over 5 K expertly annotated LiDAR scans with 3D bounding boxes, per-point semantic labels, and snow particle annotations. This rich annotation set enables research on 3D object detection, semantic segmentation, and point cloud denoising, both as standalone tasks and within joint multitask learning frameworks. By benchmarking existing methods, our dataset paves the way for the next generation of perception models designed to handle the complexities of snowy winter weather. Index Terms—Autonomous systems, data collection, sensor fusion, object detection, semantic segmentation, signal denoising.|摘要——雪地条件下的鲁棒感知仍然是自动驾驶汽车面临的关键挑战。为了推动这一领域的进展，我们引入了雪地场景，这是第一个完全在现实世界雪地条件下捕获的多模态多任务数据集，将高分辨率128波束激光雷达数据与同步RGB和热图像相结合。雪地场景包括超过5 K专业注释的激光雷达扫描，带有3D边界框、每点语义标签和雪粒子注释。这个丰富的注释集支持3D目标检测、语义分割和点云去噪的研究，既可以作为独立任务，也可以作为联合多任务学习框架。通过对现有方法进行基准测试，我们的数据集为旨在处理冬季下雪天气复杂性的下一代感知模型铺平了道路。 索引术语-自主系统，数据采集，传感器融合，目标检测，语义分割，信号去噪。",
+      "file": "Snowy_Scenes_A_Multimodal_Multitask_Dataset_Toward_Snow-Tonomous_Vehicles.pdf",
+      "page": null
+    },
+    {
+      "ts": 1790333677524,
+      "via": "火山",
+      "pairs": [
+        {
+          "en": "Thien-Thu Ngo , Abu Mohammed Raisuddin , Graduate Student Member, IEEE, Idriss Gouigah , Paula Litkey , Petri Manninen , Heikki Hyyti , Jyri Maanpää , Herranen Tuomas, Väisänen Soﬁe , Niemi Kalle, Lars Pernickel, and Eren Erdal Aksoy",
+          "zh": "Thien-Thu Ngo、Abu Mohammed Raisuddin、IEEE研究生会员、Idriss Gouigah、Paula Litkey、Petri Manninen、Heikki Hyyti、Jyri Maanpää、Herranen Tuomas、Väisänen Sofie、Niemi Kalle、Lars Pernie和Eren Erdal Aksoe",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        }
+      ],
+      "sig": "Thien-Thu Ngo , Abu Mohammed Raisuddin , Graduate Student Member, IEEE, Idriss Gouigah , Paula Litkey , Petri Manninen , Heikki Hyyti , Jyri Maanpää , Herranen Tuomas, Väisänen Soﬁe , Niemi Kalle, Lars Pernickel, and Eren Erdal Aksoy|Thien-Thu Ngo、Abu Mohammed Raisuddin、IEEE研究生会员、Idriss Gouigah、Paula Litkey、Petri Manninen、Heikki Hyyti、Jyri Maanpää、Herranen Tuomas、Väisänen Sofie、Niemi Kalle、Lars Pernie和Eren Erdal Aksoe",
+      "file": "Snowy_Scenes_A_Multimodal_Multitask_Dataset_Toward_Snow-Tonomous_Vehicles.pdf",
+      "page": null
+    },
+    {
+      "ts": 1790333577017,
+      "via": "火山",
+      "pairs": [
+        {
+          "en": "Snowy Scenes: A Multimodal Multitask Dataset Toward Snow-Tonomous Vehicles",
+          "zh": "雪景：面向雪地车辆的多模态多任务数据集",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        }
+      ],
+      "sig": "Snowy Scenes: A Multimodal Multitask Dataset Toward Snow-Tonomous Vehicles|雪景：面向雪地车辆的多模态多任务数据集",
+      "file": "Snowy_Scenes_A_Multimodal_Multitask_Dataset_Toward_Snow-Tonomous_Vehicles.pdf",
+      "page": null
+    }
+  ],
+  "llmProfiles": [],
+  "activeProfile": 0,
+  "orbSkin": "ink-wash",
+  "orbSize": 40,
+  "orbPosition": null
+}
