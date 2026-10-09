@@ -4,7 +4,7 @@
   "title": "检查仓库是否配置了 Git 自动云端同步",
   "titleGenerationStatus": "success",
   "createdAt": 1791522849224,
-  "lastActivityAt": 1791529594911,
+  "lastActivityAt": 1791530143605,
   "sessionId": "01a11f15-4264-7e93-9583-d6da5ec803aa",
   "selectedModel": "gpt-6.1-sol",
   "providerState": {
@@ -15,13 +15,13 @@
     "workspaceDependencyToolVersion": 1
   },
   "usage": {
-    "inputTokens": 42914,
+    "inputTokens": 45236,
     "cacheCreationInputTokens": 0,
-    "cacheReadInputTokens": 42368,
+    "cacheReadInputTokens": 44160,
     "contextWindow": 258400,
     "contextWindowIsAuthoritative": true,
-    "contextTokens": 42914,
-    "percentage": 17,
+    "contextTokens": 45236,
+    "percentage": 18,
     "model": "gpt-6.1-sol"
   }
 }
