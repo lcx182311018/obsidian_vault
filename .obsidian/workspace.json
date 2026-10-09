@@ -16,7 +16,7 @@
                 "file": "SignNav_Directional_Signage-Cue_Guided_Visual_Navigation_in_Large-Scale_Indoor_Environments.pdf",
                 "page": 1,
                 "left": -21,
-                "top": 126,
+                "top": 795,
                 "zoom": 0.7462121212121212
               },
               "icon": "lucide-file-text",
@@ -33,14 +33,16 @@
             "id": "dcd3287f27b30612",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "SignNav.md",
-                "mode": "source",
-                "source": false
+                "file": "ORB-SLAM： a Versatile and Accurate Monocular SLAM System.pdf",
+                "page": 1,
+                "left": -22,
+                "top": 795,
+                "zoom": 0.7242647058823529
               },
-              "icon": "lucide-file",
-              "title": "SignNav"
+              "icon": "lucide-file-text",
+              "title": "ORB-SLAM： a Versatile and Accurate Monocular SLAM System"
             }
           }
         ]
@@ -246,11 +248,11 @@
   },
   "active": "dcd3287f27b30612",
   "lastOpenFiles": [
-    "Snowy_Scenes.md",
     "贝叶斯滤波.md",
+    "SignNav.md",
+    "Snowy_Scenes.md",
     "SignNav_Directional_Signage-Cue_Guided_Visual_Navigation_in_Large-Scale_Indoor_Environments_dual.pdf",
     "NIPS-2017-attention-is-all-you-need-Paper_dual.pdf",
-    "SignNav.md",
     "SignNav_Directional_Signage-Cue_Guided_Visual_Navigation_in_Large-Scale_Indoor_Environments.pdf",
     "[(54.md",
     "Pasted image 20261008183911.png",
