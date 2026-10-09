@@ -44,4 +44,47 @@ $FFN(x)=\max(0,xW_1+b_1)W_2+b_2$
 #### 第二个注意力Encoder–Decoder Attention
 左侧encoder的输出连接到了decoder中间的Multi-Head Attention，该层称为 **交叉注意力** 
 **decoder在生成当前词,有选择的利用Encoder提供的输入句子信息** 
-与普通注意力
+与普通注意力的区别在于Q、K、V的来源
+
+|注意力类型|Q 来自哪里|K、V 来自哪里|
+|---|---|---|
+|Encoder 自注意力|Encoder 当前层输入|Encoder 当前层输入|
+|Decoder 掩码自注意力|Decoder 当前层输入|Decoder 当前层输入|
+|Encoder–Decoder 交叉注意力|Decoder 上一子层输出|Encoder 最终输出|
+也就是说，在交叉注意力里：
+
+$Q=H_{\mathrm{decoder}}W_Q$
+
+$K=H_{\mathrm{encoder}}W_K$
+
+$V=H_{\mathrm{encoder}}W_V$ 
+
+再根据：
+$Attention(Q,K,V)$
+这也解释了为什么原始 Transformer 的 Decoder 有两种注意力：
+
+- 第一种关注**已经生成的目标词**。
+    
+- 第二种关注**需要理解的源语言输入**。
+
+#### Feed Forward 
+交叉注意力完成之后，解码器融合了两方面信息：已生成目标词提供的上下文；编码器提供的源序列信息。
+Feed forward进一步加工这些融合特征
+
+### linear 和softmax
+将decoder输出的高维特征向量转为文字
+
+#### linear 
+**将特征映射到词表空间**
+$l=W_o\mathbf h+b_o$
+其中每个分数对应词表中的一个候选词元
+
+#### softmax
+**把分数转变为概率**
+$p(y_i=k)= \frac{\exp(l_k)} {\sum_{j=1}^{V}\exp(l_j)}$
+
+${ \operatorname{Attention}(Q,K,V) = \operatorname{softmax} \left( \frac{QK^{\mathsf T}}{\sqrt{d_k}} \right)V }$
+$QK^T$ 代表匹配分数
+$\frac {1}{\sqrt d_k}$调整分数尺度 、softmax把分数变成概率得到权重，将权重与$V$ 加权求和
+
+
