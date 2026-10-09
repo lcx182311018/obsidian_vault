@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Snowy_Scenes_A_Multimodal_Multitask_Dataset_Toward_Snow-Tonomous_Vehicles.pdf",
+                "file": "transformer.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,7 +106,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Snowy_Scenes_A_Multimodal_Multitask_Dataset_Toward_Snow-Tonomous_Vehicles 的反向链接列表"
+              "title": "反向链接"
             }
           },
           {
@@ -115,12 +115,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Snowy_Scenes_A_Multimodal_Multitask_Dataset_Toward_Snow-Tonomous_Vehicles.pdf",
+                "file": "transformer.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Snowy_Scenes_A_Multimodal_Multitask_Dataset_Toward_Snow-Tonomous_Vehicles 的出链列表"
+              "title": "出链"
             }
           },
           {
@@ -158,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Snowy_Scenes_A_Multimodal_Multitask_Dataset_Toward_Snow-Tonomous_Vehicles.pdf",
+                "file": "transformer.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -197,9 +197,19 @@
               "icon": "bot",
               "title": "Claudian"
             }
+          },
+          {
+            "id": "8aa7bf0f116843b2",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -222,8 +232,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "dcd3287f27b30612",
+  "active": "af048d879bdcab4f",
   "lastOpenFiles": [
+    "1.7z",
+    "1.7z.tmp",
     "NIPS-2017-attention-is-all-you-need-Paper.pdf",
     "transformer.md",
     "未命名.md",
@@ -239,7 +251,6 @@
     "3dgs.pdf",
     "Snowy_Scenes.md",
     "SignNav_Directional_Signage-Cue_Guided_Visual_Navigation_in_Large-Scale_Indoor_Environments_dual.pdf",
-    "SignNav_Directional_Signage-Cue_Guided_Visual_Navigation_in_Large-Scale_Indoor_Environments.pdf",
     "[(54.md",
     "Pasted image 20261008183911.png",
     "Pasted image 20261008183745.png",
