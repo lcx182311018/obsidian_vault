@@ -45,6 +45,22 @@
   "fullHtml": false,
   "history": [
     {
+      "ts": 1791619805907,
+      "via": "火山",
+      "pairs": [
+        {
+          "en": "Frese 4 et al. [8] propose a variant of Gauss-Seidel relaxation called multi-level relaxation (MLR).",
+          "zh": "弗雷斯4等人。[8]提出了高斯-赛德尔松弛的一种变体，称为多级松弛（MLR）。",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        }
+      ],
+      "sig": "Frese 4 et al. [8] propose a variant of Gauss-Seidel relaxation called multi-level relaxation (MLR).|弗雷斯4等人。[8]提出了高斯-赛德尔松弛的一种变体，称为多级松弛（MLR）。",
+      "file": "A Tutorial on Graph-Based SLAM.pdf",
+      "page": null
+    },
+    {
       "ts": 1791382115969,
       "via": "火山",
       "pairs": [

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "笔记/graph-based slam.md",
+                "file": "note/graph-based slam.md",
                 "mode": "source",
                 "source": false
               },
@@ -27,17 +27,18 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "文献/A Tutorial on Graph-Based SLAM.pdf",
-                "page": 1,
-                "left": -13,
-                "top": 846,
-                "zoom": 1.169747899159664
+                "file": "paper/A Tutorial on Graph-Based SLAM.pdf",
+                "page": 7,
+                "left": -33,
+                "top": 710,
+                "zoom": 1.1
               },
               "icon": "lucide-file-text",
               "title": "A Tutorial on Graph-Based SLAM"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -240,33 +241,34 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "15f1cb8eefa009f1",
+  "active": "4355289683ec61fb",
   "lastOpenFiles": [
-    "文献/A Tutorial on Graph-Based SLAM.pdf",
-    "笔记/graph-based slam.md",
+    "note/graph-based slam.md",
+    "paper/A Tutorial on Graph-Based SLAM.pdf",
+    "Pasted image 20261010165140.png",
+    "Pasted image 20261010155942.png",
+    "note/Pasted image 20261010155907.png",
+    "[机器学习——贝叶斯算法.md",
+    "note/Snowy_Scenes.md",
+    "note/SignNav.md",
+    "note/贝叶斯滤波.md",
     "graph-based slam.md",
-    "文献/π₀： A Vision-Language-Action Flow Model for General Robot Control.pdf",
-    "文献/VLN ↻ BERT： A Recurrent Vision-and-Language BERT for Navigation.pdf",
-    "文献/Transporter Networks： Rearranging the Visual World for Robotic Manipulation.pdf",
-    "文献/SplaTAM： Splat, Track & Map 3D Gaussians for Dense RGB-D SLAM.pdf",
-    "文献/Speaker-Follower Models for Vision-and-Language Navigation.pdf",
-    "文献/Snowy_Scenes_A_Multimodal_Multitask_Dataset_Toward_Snow-Tonomous_Vehicles.pdf",
-    "文献/SignNav_Directional_Signage-Cue_Guided_Visual_Navigation_in_Large-Scale_Indoor_Environments_dual.pdf",
-    "文献/SignNav_Directional_Signage-Cue_Guided_Visual_Navigation_in_Large-Scale_Indoor_Environments.pdf",
-    "文献/Scaling Data Generation in Vision-and-Language Navigation.pdf",
-    "笔记/Pasted image 20261008183911.png",
-    "笔记/Pasted image 20261008183745.png",
-    "笔记/Pasted image 20261008183735.png",
-    "笔记/Pasted image 20261008183025.png",
-    "笔记/Pasted image 20261008180019.png",
-    "笔记/Pasted image 20261008175921.png",
-    "笔记/Pasted image 20261008175712.png",
-    "笔记/Pasted image 20261008175704.png",
-    "笔记/Pasted image 20261008175221.png",
-    "笔记/Pasted image 20261008175117.png",
-    "笔记/SignNav.md",
-    "笔记/贝叶斯滤波.md",
-    "笔记/Snowy_Scenes.md",
+    "paper/π₀： A Vision-Language-Action Flow Model for General Robot Control.pdf",
+    "paper/VLN ↻ BERT： A Recurrent Vision-and-Language BERT for Navigation.pdf",
+    "paper/Transporter Networks： Rearranging the Visual World for Robotic Manipulation.pdf",
+    "paper/SplaTAM： Splat, Track & Map 3D Gaussians for Dense RGB-D SLAM.pdf",
+    "paper/Speaker-Follower Models for Vision-and-Language Navigation.pdf",
+    "paper/Snowy_Scenes_A_Multimodal_Multitask_Dataset_Toward_Snow-Tonomous_Vehicles.pdf",
+    "paper/SignNav_Directional_Signage-Cue_Guided_Visual_Navigation_in_Large-Scale_Indoor_Environments_dual.pdf",
+    "paper/SignNav_Directional_Signage-Cue_Guided_Visual_Navigation_in_Large-Scale_Indoor_Environments.pdf",
+    "paper/Scaling Data Generation in Vision-and-Language Navigation.pdf",
+    "note/Pasted image 20261008183911.png",
+    "note/Pasted image 20261008183745.png",
+    "note/Pasted image 20261008183735.png",
+    "note/Pasted image 20261008183025.png",
+    "note/Pasted image 20261008180019.png",
+    "note/Pasted image 20261008175921.png",
+    "note/Pasted image 20261008175712.png",
     "贝叶斯滤波.md",
     "[A.md",
     "A.md",
