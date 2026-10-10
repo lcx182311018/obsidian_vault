@@ -4,41 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "4d94976ce83fda27",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "adb3e34651dbbb62",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "SignNav_Directional_Signage-Cue_Guided_Visual_Navigation_in_Large-Scale_Indoor_Environments.pdf",
-                "page": 1,
-                "zoom": 1
-              },
-              "icon": "lucide-file-text",
-              "title": "SignNav_Directional_Signage-Cue_Guided_Visual_Navigation_in_Large-Scale_Indoor_Environments"
-            }
-          }
-        ]
-      },
-      {
         "id": "c7692a685da22ecc",
         "type": "tabs",
         "children": [
           {
-            "id": "dcd3287f27b30612",
+            "id": "5276a0cc438eeef8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "graph-based slam.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "graph-based slam"
+            }
+          },
+          {
+            "id": "15f1cb8eefa009f1",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "ORB-SLAM： a Versatile and Accurate Monocular SLAM System.pdf",
+                "file": "A Tutorial on Graph-Based SLAM.pdf",
                 "page": 1,
-                "zoom": 1
+                "left": -13,
+                "top": 333,
+                "zoom": 1.169747899159664
               },
               "icon": "lucide-file-text",
-              "title": "ORB-SLAM： a Versatile and Accurate Monocular SLAM System"
+              "title": "A Tutorial on Graph-Based SLAM"
             }
           }
         ]
@@ -100,7 +96,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "973a50f9fa74f60a",
@@ -223,7 +220,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 417.5
+    "width": 417.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -242,8 +240,16 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "dcd3287f27b30612",
+  "active": "5276a0cc438eeef8",
   "lastOpenFiles": [
+    "A Tutorial on Graph-Based SLAM.pdf",
+    "graph-based slam.md",
+    "[A.md",
+    "A.md",
+    "().md",
+    "Pasted image 20261008175117.png",
+    "未命名",
+    "ORB-SLAM： a Versatile and Accurate Monocular SLAM System.pdf",
     "Gaussian Splatting SLAM.pdf",
     "Real-time Photorealistic Dynamic Scene Representation and Rendering with 4D Gaussian Splatting.pdf",
     "4D Gaussian Splatting for Real-Time Dynamic Scene Rendering.pdf",
@@ -251,13 +257,9 @@
     "3D Gaussian Splatting for Real-Time Radiance Field Rendering.pdf",
     "g²o： A General Framework for Graph Optimization.pdf",
     "EWA Splatting.pdf",
-    "A Tutorial on Graph-Based SLAM.pdf",
     "贝叶斯滤波.md",
     "SignNav.md",
     "Snowy_Scenes.md",
-    "SignNav_Directional_Signage-Cue_Guided_Visual_Navigation_in_Large-Scale_Indoor_Environments_dual.pdf",
-    "NIPS-2017-attention-is-all-you-need-Paper_dual.pdf",
-    "SignNav_Directional_Signage-Cue_Guided_Visual_Navigation_in_Large-Scale_Indoor_Environments.pdf",
     "[(54.md",
     "Pasted image 20261008183911.png",
     "Pasted image 20261008183745.png",
@@ -268,7 +270,6 @@
     "Pasted image 20261008175712.png",
     "Pasted image 20261008175704.png",
     "Pasted image 20261008175101.png",
-    "Pasted image 20261008175103.png",
     "Snowy_Scenes.pdf.md",
     "欢迎.md"
   ]
