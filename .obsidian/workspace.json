@@ -15,9 +15,7 @@
               "state": {
                 "file": "SignNav_Directional_Signage-Cue_Guided_Visual_Navigation_in_Large-Scale_Indoor_Environments.pdf",
                 "page": 1,
-                "left": -21,
-                "top": 795,
-                "zoom": 0.7462121212121212
+                "zoom": 1
               },
               "icon": "lucide-file-text",
               "title": "SignNav_Directional_Signage-Cue_Guided_Visual_Navigation_in_Large-Scale_Indoor_Environments"
@@ -37,9 +35,7 @@
               "state": {
                 "file": "ORB-SLAM： a Versatile and Accurate Monocular SLAM System.pdf",
                 "page": 1,
-                "left": -22,
-                "top": 795,
-                "zoom": 0.7242647058823529
+                "zoom": 1
               },
               "icon": "lucide-file-text",
               "title": "ORB-SLAM： a Versatile and Accurate Monocular SLAM System"
@@ -248,6 +244,14 @@
   },
   "active": "dcd3287f27b30612",
   "lastOpenFiles": [
+    "Gaussian Splatting SLAM.pdf",
+    "Real-time Photorealistic Dynamic Scene Representation and Rendering with 4D Gaussian Splatting.pdf",
+    "4D Gaussian Splatting for Real-Time Dynamic Scene Rendering.pdf",
+    "2D Gaussian Splatting for Geometrically Accurate Radiance Fields.pdf",
+    "3D Gaussian Splatting for Real-Time Radiance Field Rendering.pdf",
+    "g²o： A General Framework for Graph Optimization.pdf",
+    "EWA Splatting.pdf",
+    "A Tutorial on Graph-Based SLAM.pdf",
     "贝叶斯滤波.md",
     "SignNav.md",
     "Snowy_Scenes.md",
@@ -263,12 +267,9 @@
     "Pasted image 20261008175921.png",
     "Pasted image 20261008175712.png",
     "Pasted image 20261008175704.png",
-    "NIPS-2017-attention-is-all-you-need-Paper.pdf",
     "Pasted image 20261008175101.png",
     "Pasted image 20261008175103.png",
-    "Snowy_Scenes_A_Multimodal_Multitask_Dataset_Toward_Snow-Tonomous_Vehicles.pdf",
     "Snowy_Scenes.pdf.md",
-    "欢迎.md",
-    "Snowy_Scenes_A_Multimodal_Multitask_Dataset_Toward_Snow-Tonomous_Vehicles.pdf.crdownload"
+    "欢迎.md"
   ]
 }
