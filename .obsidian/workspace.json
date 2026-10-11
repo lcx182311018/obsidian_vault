@@ -28,10 +28,10 @@
               "type": "pdf",
               "state": {
                 "file": "paper/A Tutorial on Graph-Based SLAM.pdf",
-                "page": 7,
-                "left": -33,
-                "top": 710,
-                "zoom": 1.1
+                "page": 6,
+                "left": -13,
+                "top": 75,
+                "zoom": 1.169747899159664
               },
               "icon": "lucide-file-text",
               "title": "A Tutorial on Graph-Based SLAM"
@@ -215,9 +215,19 @@
               "icon": "bot",
               "title": "Claudian"
             }
+          },
+          {
+            "id": "29ad88679e97846d",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
