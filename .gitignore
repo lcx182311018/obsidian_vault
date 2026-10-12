@@ -1,0 +1,9 @@
+# Ignore everything at the repository root by default.
+/*
+
+# Keep the shared ignore rules under version control.
+!/.gitignore
+
+# Only sync notes and papers, including their descendants.
+!/note/
+!/paper/

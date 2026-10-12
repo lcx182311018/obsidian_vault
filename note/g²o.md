@@ -1,2 +1,2 @@
  [paper](obsidian://open?vault=%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB&file=paper%2Fg%C2%B2o%EF%BC%9A%20A%20General%20Framework%20for%20Graph%20Optimization.pdf)
- 
+ g²o是一个通用的基于图优化的slam求解框架，只需要输入误差函数即可迅速实现SLAM问题的求解，使用了schur补、
