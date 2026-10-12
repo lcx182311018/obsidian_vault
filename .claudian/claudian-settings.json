@@ -1,8 +1,7 @@
 {
   "userName": "",
   "permissionMode": "yolo",
-  "model": "gpt-6-luna",
-  "thinkingBudget": "off",
+  "model": "openai-codex/gpt-6-luna",
   "effortLevel": "high",
   "serviceTier": "default",
   "enableAutoTitleGeneration": true,
@@ -14,7 +13,6 @@
   "sharedEnvironmentVariables": "",
   "envSnippets": [],
   "customContextLimits": {},
-  "customModelAliases": {},
   "keyboardNavigation": {
     "scrollUpKey": "w",
     "scrollDownKey": "s",
@@ -25,30 +23,57 @@
   "providerConfigs": {
     "claude": {
       "enabled": false,
-      "responseStyle": "Default",
       "safeMode": "acceptEdits",
       "cliPath": "",
       "cliPathsByHost": {},
       "loadUserSettings": true,
       "enableChrome": false,
       "customModels": "",
-      "defaultModel": "opus",
       "lastModel": "haiku",
       "modelEnvironmentType": "",
       "titleModelEnvironmentType": "",
       "environmentVariables": "",
-      "environmentHash": ""
+      "environmentHash": "",
+      "outputStyle": null,
+      "promptSuggestions": false,
+      "discoveredOutputStyles": [],
+      "modelAliases": {},
+      "visibleModels": [
+        "haiku",
+        "sonnet",
+        "opus",
+        "fable"
+      ],
+      "selectedModels": []
     },
     "codex": {
       "enabled": true,
       "safeMode": "workspace-write",
       "cliPath": "",
       "cliPathsByHost": {},
-      "customModels": "",
-      "discoveredModels": [
+      "modelAliases": {},
+      "visibleModels": [
+        "gpt-6.1-sol",
+        "gpt-6-astra",
+        "gpt-6-sol",
+        "gpt-6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra",
+        "gpt-5.6-luna",
+        "gpt-5.5"
+      ],
+      "enableUltraEffort": false,
+      "responseStyle": "pragmatic",
+      "reasoningSummary": "detailed",
+      "environmentVariables": "",
+      "environmentHash": "runtime-input:v1:ed54f4f5238abeec7f65a5da1e468c9a639e157a7d1c7753b53f54ba1196e8a0",
+      "installationMethodsByHost": {},
+      "wslDistroOverridesByHost": {},
+      "responseVerbosity": "default",
+      "selectedModels": [
         {
           "model": "gpt-6.1-sol",
-          "displayName": "GPT-6.1-Sol",
+          "displayName": "GPT-6.1 Sol",
           "description": "Latest workhorse model for coding and everyday work.",
           "supportedReasoningEfforts": [
             {
@@ -93,7 +118,7 @@
         },
         {
           "model": "gpt-6-astra",
-          "displayName": "GPT-6-Astra",
+          "displayName": "GPT-6 Astra",
           "description": "Frontier intelligence for the most demanding work.",
           "supportedReasoningEfforts": [
             {
@@ -138,7 +163,7 @@
         },
         {
           "model": "gpt-6-sol",
-          "displayName": "GPT-6-Sol",
+          "displayName": "GPT-6 Sol",
           "description": "Previous generation workhorse model.",
           "supportedReasoningEfforts": [
             {
@@ -183,7 +208,7 @@
         },
         {
           "model": "gpt-6-luna",
-          "displayName": "GPT-6-Luna",
+          "displayName": "GPT-6 Luna",
           "description": "Fast and affordable model for easier tasks.",
           "supportedReasoningEfforts": [
             {
@@ -224,7 +249,7 @@
         },
         {
           "model": "gpt-5.6-sol",
-          "displayName": "GPT-5.6-Sol",
+          "displayName": "GPT-5.6 Sol",
           "description": "Older generation workhorse model.",
           "supportedReasoningEfforts": [
             {
@@ -269,7 +294,7 @@
         },
         {
           "model": "gpt-5.6-terra",
-          "displayName": "GPT-5.6-Terra",
+          "displayName": "GPT-5.6 Terra",
           "description": "Older balanced model for straightforward work.",
           "supportedReasoningEfforts": [
             {
@@ -314,7 +339,7 @@
         },
         {
           "model": "gpt-5.6-luna",
-          "displayName": "GPT-5.6-Luna",
+          "displayName": "GPT-5.6 Luna",
           "description": "Older fast and efficient model.",
           "supportedReasoningEfforts": [
             {
@@ -390,21 +415,9 @@
           ],
           "isDefault": false
         }
-      ],
-      "modelAliases": {},
-      "visibleModels": null,
-      "enableUltraEffort": false,
-      "responseStyle": "pragmatic",
-      "reasoningSummary": "detailed",
-      "environmentVariables": "",
-      "environmentHash": "runtime-input:v1:ed54f4f5238abeec7f65a5da1e468c9a639e157a7d1c7753b53f54ba1196e8a0",
-      "catalogTimestamp": 1791537171389,
-      "catalogFingerprint": "2:b81dc4a365905c17232c3287b22aa8468c940a821aef31512e46e75feed8d055",
-      "installationMethodsByHost": {},
-      "wslDistroOverridesByHost": {}
+      ]
     },
     "grok": {
-      "catalogsByHost": {},
       "cliPath": "",
       "cliPathsByHost": {},
       "enabled": false,
@@ -412,7 +425,8 @@
       "environmentVariables": "",
       "modelAliases": {},
       "preferredReasoningByModel": {},
-      "visibleModels": null
+      "visibleModels": [],
+      "selectedModelsByHost": {}
     },
     "opencode": {
       "cliPath": "",
@@ -422,21 +436,33 @@
       "environmentVariables": "",
       "modelAliases": {},
       "preferredThinkingByModel": {},
-      "selectedMode": "",
       "thinkingOptionsByModel": {},
-      "visibleModels": []
+      "visibleModels": [],
+      "selectedModels": []
     },
     "pi": {
       "cliPath": "",
       "cliPathsByHost": {},
-      "discoveredModels": [],
       "enabled": false,
       "environmentHash": "",
       "environmentVariables": "",
       "modelAliases": {},
       "preferredThinkingByModel": {},
-      "toolMode": "all",
-      "visibleModels": []
+      "visibleModels": [],
+      "selectedModels": []
+    },
+    "deepseek": {
+      "enabled": false,
+      "codeMode": false,
+      "presetPlugins": "",
+      "cliPath": "",
+      "cliPathsByHost": {},
+      "environmentVariables": "",
+      "environmentHash": "",
+      "visibleModels": [],
+      "modelAliases": {},
+      "preferredReasoningByModel": {},
+      "selectedModels": []
     }
   },
   "settingsProvider": "codex",
@@ -446,7 +472,7 @@
   },
   "savedProviderModel": {
     "claude": "haiku",
-    "codex": "gpt-6-luna"
+    "codex": "openai-codex/gpt-6-luna"
   },
   "savedProviderEffort": {
     "claude": "high",
@@ -455,27 +481,32 @@
   "savedProviderServiceTier": {
     "codex": "default"
   },
-  "savedProviderThinkingBudget": {},
   "savedProviderPermissionMode": {
     "claude": "yolo",
     "codex": "yolo"
   },
   "pendingProviderSessionInvalidations": {},
-  "lastCustomModel": "",
-  "maxWarmAgentProcesses": 5,
   "enableAutoScroll": true,
   "showMessageTimestamps": false,
   "deferMathRenderingDuringStreaming": true,
   "expandFileEditsByDefault": false,
   "chatViewPlacement": "right-sidebar",
+  "enableZenMode": true,
+  "zenModePosition": null,
   "enableDualPane": true,
   "dualPaneSide": "right",
   "restoreTabsOnStartup": true,
-  "collabEnabled": false,
-  "collabProjectsFolder": "workspace",
-  "collabGitPath": "",
+  "skillsSynced": false,
   "sessionManagerOrganization": "list",
   "sessionManagerSort": "last-updated",
+  "sessionAutoArchiveAfter": "off",
   "pinnedLinkedContentPaths": [],
-  "hiddenProviderCommands": {}
+  "hiddenCommands": [],
+  "thinkingBudget": "off",
+  "customModelAliases": {},
+  "savedProviderThinkingBudget": {},
+  "lastCustomModel": "",
+  "collabEnabled": false,
+  "collabProjectsFolder": "workspace",
+  "collabGitPath": ""
 }

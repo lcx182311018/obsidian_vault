@@ -11,16 +11,14 @@
             "id": "dcd3287f27b30612",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "paper/g²o： A General Framework for Graph Optimization.pdf",
-                "page": 1,
-                "left": -21,
-                "top": 795,
-                "zoom": 0.7218137254901961
+                "file": "note/SignNav.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "g²o： A General Framework for Graph Optimization"
+              "icon": "lucide-file",
+              "title": "SignNav"
             }
           }
         ]
@@ -188,6 +186,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "realclaudian:Open Claudian": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -198,38 +197,43 @@
       "mini-translator:打开 Mini Translator 面板": false,
       "pdf-plus:PDF++: Toggle auto-copy": false,
       "pdf-plus:PDF++: Toggle auto-focus": false,
-      "pdf-plus:PDF++: Toggle auto-paste": false,
-      "obsidian-git:Open Git source control": false
+      "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "fb7c0fd0c63017fd",
+  "active": "dcd3287f27b30612",
   "lastOpenFiles": [
+    "note/Snowy_Scenes.md",
+    "note/SignNav.md",
+    "note/graph-based slam.md",
+    "note/Pasted image 20261008175101.png",
+    "note/g²o.md",
+    "note/阅读顺序.md",
+    "note/贝叶斯滤波.md",
     "transformer.md",
-    "论文下载清单_2026-10-09.csv",
+    "paper/视觉SLAM十四讲从理论到实践  第2版_14627454.pdf",
     "paper/π₀： A Vision-Language-Action Flow Model for General Robot Control.pdf",
     "paper/iSAM2： Incremental Smoothing and Mapping Using the Bayes Tree.pdf",
     "paper/g²o： A General Framework for Graph Optimization.pdf",
+    "paper/g²o A General Framework for Graph Optimization.zh-CN.mono.pdf",
     "paper/VLN ↻ BERT： A Recurrent Vision-and-Language BERT for Navigation.pdf",
     "paper/Transporter Networks： Rearranging the Visual World for Robotic Manipulation.pdf",
     "paper/SplaTAM： Splat, Track & Map 3D Gaussians for Dense RGB-D SLAM.pdf",
     "paper/Speaker-Follower Models for Vision-and-Language Navigation.pdf",
-    "paper/Scaling Data Generation in Vision-and-Language Navigation.pdf",
-    "paper/Real-time Photorealistic Dynamic Scene Representation and Rendering with 4D Gaussian Splatting.pdf",
-    "未命名.md",
-    "Pasted image 20261009031118.png",
-    "note/SignNav.md",
-    "note/贝叶斯滤波.md",
-    "note/Snowy_Scenes.md",
-    "[(54.md",
+    "paper/Snowy_Scenes_A_Multimodal_Multitask_Dataset_Toward_Snow-Tonomous_Vehicles.pdf",
+    "note/Pasted image 20261010165140.png",
+    "note/Pasted image 20261010155942.png",
+    "note/Pasted image 20261010155907.png",
     "note/Pasted image 20261008183911.png",
     "note/Pasted image 20261008183745.png",
     "note/Pasted image 20261008183735.png",
     "note/Pasted image 20261008183025.png",
     "note/Pasted image 20261008180019.png",
     "note/Pasted image 20261008175921.png",
-    "note/Pasted image 20261008175712.png",
-    "note/Pasted image 20261008175704.png",
-    "note/Pasted image 20261008175101.png",
+    "未命名.md",
+    "SignNav.md",
+    "贝叶斯滤波.md",
+    "Snowy_Scenes.md",
+    "[(54.md",
     "Snowy_Scenes.pdf.md",
     "欢迎.md"
   ]
