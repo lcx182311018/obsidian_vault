@@ -29,9 +29,7 @@
               "state": {
                 "file": "paper/g²o： A General Framework for Graph Optimization.pdf",
                 "page": 1,
-                "left": -13,
-                "top": 408,
-                "zoom": 1.1372549019607843
+                "zoom": 1
               },
               "icon": "lucide-file-text",
               "title": "g²o： A General Framework for Graph Optimization"
@@ -111,8 +109,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "973a50f9fa74f60a",
@@ -241,12 +238,11 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 417.5,
-    "collapsed": true
+    "width": 417.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -265,7 +261,7 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "47a8b876a91e3701",
+  "active": "af048d879bdcab4f",
   "lastOpenFiles": [
     "note/graph-based slam.md",
     "note/g²o.md",
