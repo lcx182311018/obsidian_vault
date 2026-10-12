@@ -45,19 +45,19 @@
   "fullHtml": false,
   "history": [
     {
-      "ts": 1791619805907,
+      "ts": 1791533585687,
       "via": "火山",
       "pairs": [
         {
-          "en": "Frese 4 et al. [8] propose a variant of Gauss-Seidel relaxation called multi-level relaxation (MLR).",
-          "zh": "弗雷斯4等人。[8]提出了高斯-赛德尔松弛的一种变体，称为多级松弛（MLR）。",
+          "en": "nstead of performing a single attention function with dmodel-dimensional keys, values and queries, we found it beneﬁcial to linearly project the queries, keys and values h times with different, learned linear projections to dk, dk and dv dimensions, respectively. On each of these projected versions of queries, keys and values we then perform the attention function in parallel, yielding dv -dimensional output values. These are concatenated and once again projected, resulting in the ﬁnal values, as depicted in Figure 2",
+          "zh": "我们发现，与其使用dmodel维度的键、值和查询执行单个注意力函数，不如将查询、键和值线性投影h次，分别学习到dk、dk和dv维度的线性投影。然后，在查询、键和值的每个投影版本上，我们并行执行注意力函数，产生dv维度的输出值。这些被连接并再次投影，产生最终值，如图2所示",
           "sourceLanguage": "auto",
           "targetLanguage": "zh-Hans",
           "detectedLanguage": "en"
         }
       ],
-      "sig": "Frese 4 et al. [8] propose a variant of Gauss-Seidel relaxation called multi-level relaxation (MLR).|弗雷斯4等人。[8]提出了高斯-赛德尔松弛的一种变体，称为多级松弛（MLR）。",
-      "file": "A Tutorial on Graph-Based SLAM.pdf",
+      "sig": "nstead of performing a single attention function with dmodel-dimensional keys, values and queries, we found it beneﬁcial to linearly project the queries, keys and values h times with different, learned linear projections to dk, dk and dv dimensions, respectively. On each of these projected versions of queries, keys and values we then perform the attention function in parallel, yielding dv -dimensional output values. These are concatenated and once again projected, resulting in the ﬁnal values, as depicted in Figure 2|我们发现，与其使用dmodel维度的键、值和查询执行单个注意力函数，不如将查询、键和值线性投影h次，分别学习到dk、dk和dv维度的线性投影。然后，在查询、键和值的每个投影版本上，我们并行执行注意力函数，产生dv维度的输出值。这些被连接并再次投影，产生最终值，如图2所示",
+      "file": "NIPS-2017-attention-is-all-you-need-Paper.pdf",
       "page": null
     },
     {
@@ -653,6 +653,22 @@
       ],
       "sig": "Snowy Scenes: A Multimodal Multitask Dataset Toward Snow-Tonomous Vehicles|雪景：面向雪地车辆的多模态多任务数据集",
       "file": "Snowy_Scenes_A_Multimodal_Multitask_Dataset_Toward_Snow-Tonomous_Vehicles.pdf",
+      "page": null
+    },
+    {
+      "ts": 1791619805907,
+      "via": "火山",
+      "pairs": [
+        {
+          "en": "Frese 4 et al. [8] propose a variant of Gauss-Seidel relaxation called multi-level relaxation (MLR).",
+          "zh": "弗雷斯4等人。[8]提出了高斯-赛德尔松弛的一种变体，称为多级松弛（MLR）。",
+          "sourceLanguage": "auto",
+          "targetLanguage": "zh-Hans",
+          "detectedLanguage": "en"
+        }
+      ],
+      "sig": "Frese 4 et al. [8] propose a variant of Gauss-Seidel relaxation called multi-level relaxation (MLR).|弗雷斯4等人。[8]提出了高斯-赛德尔松弛的一种变体，称为多级松弛（MLR）。",
+      "file": "A Tutorial on Graph-Based SLAM.pdf",
       "page": null
     }
   ],
