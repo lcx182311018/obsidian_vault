@@ -1,0 +1,5 @@
+# Publish only the note/ and paper/ directories.
+/*
+!/.gitignore
+!/note/
+!/paper/
