@@ -18,3 +18,8 @@
 ### 扰动模型（左乘）
 小扰动的李代数为![[Pasted image 20261017150405.png]] 
 ![[Pasted image 20261017150214.png]]
+### SE(3)  
+![[Pasted image 20261018101554.png|694]]
+算符![[Pasted image 20261018101629.png]]的定义如下：
+假设 **$a,b,x,y$**  都是列向量
+![[Pasted image 20261018101732.png]]
